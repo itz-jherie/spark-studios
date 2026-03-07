@@ -1,65 +1,115 @@
-import Image from "next/image";
-import SectionTitle from "../Common/SectionTitle";
+"use client";
 
-const checkIcon = (
-  <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
-    <path d="M5.8535 12.6631C5.65824 12.8584 5.34166 12.8584 5.1464 12.6631L0.678505 8.1952C0.483242 7.99994 0.483242 7.68336 0.678505 7.4881L2.32921 5.83739C2.52467 5.64193 2.84166 5.64216 3.03684 5.83791L5.14622 7.95354C5.34147 8.14936 5.65859 8.14952 5.85403 7.95388L13.3797 0.420561C13.575 0.22513 13.8917 0.225051 14.087 0.420383L15.7381 2.07143C15.9333 2.26669 15.9333 2.58327 15.7381 2.77854L5.8535 12.6631Z" />
-  </svg>
-);
+import Link from "next/link";
 
 const AboutSectionOne = () => {
-  const List = ({ text }) => (
-    <p className="mb-5 flex items-center text-lg font-medium text-body-color">
-      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-        {checkIcon}
-      </span>
-      {text}
-    </p>
-  );
-
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
-      <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title="Your Vision, Our Expertise"
-                paragraph="At Spark Studios, we transform your ideas into stunning realities. Our expert team collaborates closely with you to bring your brand's vision to life, delivering innovative designs and impactful marketing strategies. Let us help you stand out and succeed"
-                mb="44px"
-              />
+    <section id="about" className="relative bg-surface">
+      <div className="border-t border-border" />
 
-              <div
-                className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Custom Branding" />
-                    <List text="Full-Service Marketing" />
-                  </div>
+      <div className="container py-20 md:py-28 lg:py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          {/* Left - Content */}
+          <div className="lg:col-span-6">
+            <span className="text-[12px] font-bold uppercase tracking-widest text-ink-4 mb-4 block">
+              About Us
+            </span>
+            <h2
+              className="font-display font-black text-ink uppercase tracking-tighter mb-8"
+              style={{
+                fontSize: "clamp(2rem, 4vw, 3.2rem)",
+                lineHeight: "0.9",
+              }}
+            >
+              Your Vision,{" "}
+              <span className="font-accent italic lowercase tracking-normal font-normal text-primary">
+                our expertise
+              </span>
+            </h2>
 
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="User-Centric Websites" />
-                    <List text=" Video Production" />
-                    <List text="Client-Centric Approach" />
-                  </div>
+            <p className="text-[15px] leading-[1.8] text-ink-3 mb-10 max-w-[480px]">
+              At Spark Studios, we transform your ideas into stunning realities.
+              Our expert team collaborates closely with you to bring your
+              brand&apos;s vision to life, delivering innovative designs and
+              impactful digital strategies.
+            </p>
+
+            {/* Feature list */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+              {[
+                "Premium Quality",
+                "Custom Branding",
+                "Pixel-Perfect Design",
+                "Fast Delivery",
+                "Scalable Solutions",
+                "Client-Centric",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center gap-3 text-[14px] font-medium text-ink-2"
+                >
+                  <div className="h-1.5 w-1.5 bg-primary flex-shrink-0" />
+                  {item}
                 </div>
-              </div>
+              ))}
             </div>
 
-            <div className="w-full px-4 lg:w-1/2">
-              <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
-                data-wow-delay=".2s"
+            <Link href="/#contact" className="btn-primary">
+              Work With Us
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="ml-2"
               >
-                <Image
-                  src="/images/about/about-image.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto max-w-full lg:mr-0 "
-                />
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </Link>
+          </div>
+
+          {/* Right - Stats Grid */}
+          <div className="lg:col-span-5 lg:col-start-8">
+            <div className="border border-border">
+              <div className="grid grid-cols-2 divide-x divide-y divide-border">
+                {[
+                  { number: "3+", label: "Years Experience" },
+                  { number: "45+", label: "Projects Done" },
+                  { number: "20+", label: "Happy Clients" },
+                  { number: "5+", label: "Team Members" },
+                ].map((stat) => (
+                  <div
+                    key={stat.label}
+                    className="p-8 md:p-10 hover:bg-surface-2 transition-colors duration-300"
+                  >
+                    <div className="font-display font-black text-3xl md:text-4xl text-ink mb-2 tracking-tight">
+                      {stat.number.replace("+", "")}
+                      <span className="text-primary">+</span>
+                    </div>
+                    <span className="text-[11px] font-bold uppercase tracking-widest text-ink-4">
+                      {stat.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Award badges */}
+              <div className="border-t border-border p-6 flex flex-wrap gap-3">
+                {["Top Rated", "5-Star Reviews", "Global Reach"].map(
+                  (badge) => (
+                    <span
+                      key={badge}
+                      className="text-[11px] font-bold uppercase tracking-widest text-ink-4 border border-border px-3 py-1.5"
+                    >
+                      {badge}
+                    </span>
+                  )
+                )}
               </div>
             </div>
           </div>

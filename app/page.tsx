@@ -1,33 +1,23 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/Blog";
-import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
+import MarqueeBand from "@/components/Common/MarqueeBand";
 import Contact from "@/components/Contact";
+import CTA from "@/components/CTA";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Pricing from "@/components/Pricing";
-import Testimonials from "@/components/Testimonials";
-import Video from "@/components/Video";
-import { Inter, Satisfy, Montserrat } from "@next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-const satisfy = Satisfy({weight: "400", subsets: ["latin"] });
-const montserrat = Montserrat({ subsets: ["latin"]})
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
     <>
       <ScrollUp />
       <Hero />
+      <MarqueeBand />
       <Features />
-      <Video />
-      <Brands />
+      <Projects />
+      <MarqueeBand />
       <AboutSectionOne />
-      <AboutSectionTwo />
-      <Testimonials />
-      <Pricing />
-      <Blog />
+      <CTA />
       <Contact />
     </>
   );

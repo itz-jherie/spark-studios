@@ -1,81 +1,121 @@
-import NewsLatterBox from "./NewsLatterBox";
+"use client";
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setErrorMsg("");
+
+    if (!formRef.current) return;
+
+    emailjs.sendForm(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+      formRef.current,
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
+    )
+      .then(() => {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+        formRef.current?.reset();
+
+        setTimeout(() => setIsSubmitted(false), 5000);
+      }, (error) => {
+        setIsSubmitting(false);
+        setErrorMsg("Failed to send message. Please try again.");
+        console.error("EmailJS Error:", error);
+      });
+  };
+
   return (
-    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
-            <div
-              className="wow fadeInUp mb-12 rounded-md bg-primary/[3%] py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
-              data-wow-delay=".15s
-              "
+    <section id="contact" className="relative bg-surface">
+      <div className="border-t border-border" />
+
+      <div className="container py-20 md:py-28 lg:py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          {/* Left - Section Info */}
+          <div className="lg:col-span-4">
+            <span className="text-[12px] font-bold uppercase tracking-widest text-ink-4 mb-4 block">
+              Get In Touch
+            </span>
+            <h2
+              className="font-display font-black text-ink uppercase tracking-tighter mb-6"
+              style={{
+                fontSize: "clamp(2rem, 4vw, 3.2rem)",
+                lineHeight: "0.9",
+              }}
             >
-              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                Need Help? Open a Ticket
-              </h2>
-              <p className="mb-12 text-base font-medium text-body-color">
-                Our support team will get back to you ASAP via email.
-              </p>
-              <form>
-                <div className="-mx-4 flex flex-wrap">
-                  <div className="w-full px-4 md:w-1/2">
-                    <div className="mb-8">
-                      <label
-                        htmlFor="name"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                      >
-                        Your Name
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="Enter your name"
-                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
-                      />
-                    </div>
-                  </div>
-                  <div className="w-full px-4 md:w-1/2">
-                    <div className="mb-8">
-                      <label
-                        htmlFor="email"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                      >
-                        Your Email
-                      </label>
-                      <input
-                        type="email"
-                        placeholder="Enter your email"
-                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
-                      />
-                    </div>
-                  </div>
-                  <div className="w-full px-4">
-                    <div className="mb-8">
-                      <label
-                        htmlFor="message"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                      >
-                        Your Message
-                      </label>
-                      <textarea
-                        name="message"
-                        rows={5}
-                        placeholder="Enter your Message"
-                        className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div className="w-full px-4">
-                    <button className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-                      Submit Ticket
-                    </button>
-                  </div>
+              Start Your{" "}
+              <span className="font-accent italic lowercase tracking-normal font-normal text-primary">
+                project
+              </span>
+            </h2>
+            <p className="text-[15px] leading-[1.8] text-ink-3 mb-8">
+              Ready to elevate your brand? Tell us about your project and
+              we&apos;ll get back to you within 24 hours.
+            </p>
+
+            {/* Contact details */}
+            <div className="space-y-4 border-t border-border pt-8">
+              <div className="flex items-center gap-3 text-[14px] text-ink-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-primary flex-shrink-0">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="M22 7l-10 7L2 7" />
+                </svg>
+                hello@sparkstudios.qzz.io
+              </div>
+              <div className="flex items-start gap-3 text-[14px] text-ink-2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-primary flex-shrink-0 mt-0.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <div>
+                  <p>Toronto, Canada</p>
+                  <p>Abuja, Nigeria</p>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
-          <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
-            <NewsLatterBox />
+
+          {/* Right - Form */}
+          <div className="lg:col-span-7 lg:col-start-6">
+            {/* Form disabled temporarily due to EmailJS setup required */}
+            <div className="bg-surface-2 border border-border p-10 md:p-14 h-full flex flex-col justify-center transition-colors group">
+              <h3 className="font-display font-black uppercase tracking-tight text-3xl text-ink mb-4">
+                Let&apos;s work together
+              </h3>
+              <p className="text-[15px] leading-[1.8] text-ink-3 mb-8 max-w-[450px]">
+                Please reach out to us directly via email and we&apos;ll get back to you right away to discuss your project.
+              </p>
+
+              <a
+                href="mailto:hello@sparkstudios.qzz.io?subject=New Project Enquiry — Spark Studios"
+                className="btn-primary inline-flex w-fit"
+              >
+                Email Us Directly
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="ml-2"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
