@@ -1,15 +1,7 @@
-
+"use client";
 import Link from "next/link";
 
-export const metadata = {
-    title: "Careers",
-    description: "Join the studio. We're always looking for exceptional people who care deeply about craft, quality, and creative problem-solving.",
-    openGraph: {
-        title: "Careers | Spark Studios",
-        description: "Join the studio. We're always looking for exceptional people who care deeply about craft, quality, and creative problem-solving.",
-        url: "https://sparkstudios.qzz.io/careers",
-    },
-};
+
 
 const CareersPage = () => {
     return (
@@ -97,7 +89,27 @@ const CareersPage = () => {
                                     hear from you.
                                 </p>
                                 <a
-                                    href="mailto:hello@sparkstudios.qzz.io?subject=Speculative Application — Spark Studios"
+                                    href="mailto:hello@sparkstudios.qzz.io?subject=Speculative%20Application%20%E2%80%94%20Spark%20Studios"
+                                    onClick={(e) => {
+                                        const btn = e.currentTarget;
+                                        // Do NOT prevent default — let mobile browsers handle mailto natively.
+                                        // Attempt to copy for PC fallback:
+                                        if (navigator.clipboard && navigator.clipboard.writeText) {
+                                            navigator.clipboard.writeText("hello@sparkstudios.qzz.io").then(() => {
+                                                if (!btn) return;
+                                                const originalText = btn.innerHTML;
+                                                btn.innerHTML = `
+                                                  Copied! 
+                                                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" class="ml-2">
+                                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                                  </svg>
+                                                `;
+                                                setTimeout(() => {
+                                                    if (btn) btn.innerHTML = originalText;
+                                                }, 3000);
+                                            }).catch(err => console.error("Clipboard write failed", err));
+                                        }
+                                    }}
                                     className="btn-primary"
                                 >
                                     Send Your Portfolio
@@ -216,7 +228,27 @@ const CareersPage = () => {
                         </h2>
                     </div>
                     <a
-                        href="mailto:hello@sparkstudios.qzz.io?subject=Keep me posted — Spark Studios Careers"
+                        href="mailto:hello@sparkstudios.qzz.io?subject=Keep%20me%20posted%20%E2%80%94%20Spark%20Studios%20Careers"
+                        onClick={(e) => {
+                            const btn = e.currentTarget;
+                            // Do NOT prevent default — let mobile browsers handle mailto natively.
+                            // Attempt to copy for PC fallback:
+                            if (navigator.clipboard && navigator.clipboard.writeText) {
+                                navigator.clipboard.writeText("hello@sparkstudios.qzz.io").then(() => {
+                                    if (!btn) return;
+                                    const originalText = btn.innerHTML;
+                                    btn.innerHTML = `
+                                      Copied! 
+                                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" class="ml-2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                      </svg>
+                                    `;
+                                    setTimeout(() => {
+                                        if (btn) btn.innerHTML = originalText;
+                                    }, 3000);
+                                }).catch(err => console.error("Clipboard write failed", err));
+                            }
+                        }}
                         className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/20 text-white font-display text-[13px] font-bold uppercase tracking-widest transition-all duration-300 hover:bg-white/10 flex-shrink-0"
                     >
                         Notify Me

@@ -47,6 +47,12 @@ const CTA = () => {
                             <Link
                                 href="/#contact"
                                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-display text-[13px] font-bold uppercase tracking-widest transition-all duration-300 hover:bg-primary-light"
+                                onClick={(e) => {
+                                    if (window.location.pathname === "/") {
+                                        e.preventDefault();
+                                        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                                    }
+                                }}
                             >
                                 Start Project
                             </Link>

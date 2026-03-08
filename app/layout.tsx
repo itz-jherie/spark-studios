@@ -10,10 +10,10 @@ export const metadata = {
     default: "Spark Studios | Design That Makes Brands Impossible to Ignore",
   },
   description:
-    "Spark Studios is an elite creative agency specializing in stunning visuals, high-performance web development, Framer websites, and memorable digital experiences. Offices in Toronto and Abuja.",
+    "Spark Studios is an elite creative agency specializing in stunning visuals, high-performance web development, WordPress, Framer websites, and memorable digital experiences. Offices in Toronto and Abuja.",
   keywords: [
     // Core Services
-    "creative agency", "web design", "web development", "Framer design", "brand strategy", "digital experiences",
+    "creative agency", "web design", "web development", "WordPress development", "WordPress agency", "Framer design", "brand strategy", "digital experiences",
     "Spark Studios", "UI/UX design", "product design agency", "SaaS web design", "startup web design", "B2B web design",
     "branding agency", "logo design", "identity design", "pitch deck design", "presentation design",
     // Location Based keywords
@@ -21,7 +21,7 @@ export const metadata = {
     "Abuja web design", "Abuja creative agency", "Abuja branding agency", "Abuja UI/UX agency", "Nigeria web design",
     "Canadian design agency", "global creative studio", "remote design agency",
     // Tech/Niche Keywords
-    "Framer expert", "Framer developer", "Next.js web development", "React development agency",
+    "Framer expert", "Framer developer", "WordPress WooCommerce developer", "Custom WordPress Themes", "Next.js web development", "React development agency",
     "high performance websites", "animated websites", "Awwwards winning design", "premium web design",
     "luxury brand identity", "modern web design"
   ],
@@ -49,7 +49,7 @@ export const metadata = {
   openGraph: {
     title: "Spark Studios | Design That Makes Brands Impossible to Ignore",
     description:
-      "Spark Studios is an elite creative agency specializing in stunning visuals, high-performance web development, Framer websites, and memorable digital experiences. Offices in Toronto and Abuja.",
+      "Spark Studios is an elite creative agency specializing in stunning visuals, high-performance web development, WordPress, Framer websites, and memorable digital experiences. Offices in Toronto and Abuja.",
     url: "https://sparkstudios.qzz.io",
     siteName: "Spark Studios",
     images: [
@@ -67,7 +67,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Spark Studios | Design That Makes Brands Impossible to Ignore",
     description:
-      "Spark Studios is an elite creative agency specializing in stunning visuals, high-performance web development, Framer websites, and memorable digital experiences. Offices in Toronto and Abuja.",
+      "Spark Studios is an elite creative agency specializing in stunning visuals, high-performance web development, WordPress, Framer websites, and memorable digital experiences. Offices in Toronto and Abuja.",
     creator: "@sparkstudiosHQ",
     images: ["/images/og-image.jpg"],
   },
@@ -92,7 +92,7 @@ export default function RootLayout({
               "url": "https://sparkstudios.qzz.io",
               "logo": "https://sparkstudios.qzz.io/images/logospark3.png",
               "image": "https://sparkstudios.qzz.io/images/og-image.jpg",
-              "description": "Spark Studios is an elite creative agency specializing in stunning visuals, high-performance web development, Framer websites, and memorable digital experiences.",
+              "description": "Spark Studios is an elite creative agency specializing in stunning visuals, high-performance web development, WordPress, Framer websites, and memorable digital experiences.",
               "address": [
                 {
                   "@type": "PostalAddress",
@@ -102,6 +102,7 @@ export default function RootLayout({
                 {
                   "@type": "PostalAddress",
                   "addressLocality": "Abuja",
+                  "addressRegion": "FCT",
                   "addressCountry": "Nigeria"
                 }
               ],

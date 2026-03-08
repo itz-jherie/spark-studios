@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -54,13 +55,14 @@ const Footer = () => {
               {[
                 "Graphics Design",
                 "Framer Development",
+                "WordPress Development",
                 "Web Design",
                 "Web Development",
                 "Slides Design",
               ].map((item) => (
                 <li key={item}>
                   <a
-                    href="/#services"
+                    href="/services"
                     className="text-[14px] text-ink-4 transition-colors duration-200 hover:text-white"
                   >
                     {item}
@@ -77,10 +79,9 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               {[
-                { label: "About", href: "/#about" },
                 { label: "Work", href: "/projects" },
                 { label: "Careers", href: "/careers" },
-                { label: "Blog", href: "#" },
+                { label: "Blog", href: "/blog" },
               ].map((item) => (
                 <li key={item.label}>
                   <a
@@ -102,8 +103,14 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="mailto:hello@sparkstudios.qzz.io"
+                  href="/#contact"
                   className="text-[14px] text-ink-4 transition-colors duration-200 hover:text-white"
+                  onClick={(e) => {
+                    if (window.location.pathname === "/") {
+                      e.preventDefault();
+                      document.getElementById("contact")?.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
                 >
                   hello@sparkstudios.qzz.io
                 </a>

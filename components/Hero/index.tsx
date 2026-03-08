@@ -71,14 +71,28 @@ const Hero = () => {
               </p>
 
               <div className="mt-8 flex flex-row gap-4 lg:justify-end">
-                <Link href="/#contact" className="btn-primary group">
+                <Link href="/#contact" className="btn-primary group" onClick={(e) => {
+                  if (window.location.pathname === "/") {
+                    e.preventDefault();
+                    requestAnimationFrame(() => {
+                      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                    });
+                  }
+                }}>
                   Start Project
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2 transition-transform group-hover:translate-x-1">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
                   </svg>
                 </Link>
-                <Link href="/#projects" className="btn-outline">
+                <Link href="/#projects" className="btn-outline" onClick={(e) => {
+                  if (window.location.pathname === "/") {
+                    e.preventDefault();
+                    requestAnimationFrame(() => {
+                      document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+                    });
+                  }
+                }}>
                   Portfolio
                 </Link>
               </div>

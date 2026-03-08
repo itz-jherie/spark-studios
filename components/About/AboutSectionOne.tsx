@@ -54,7 +54,12 @@ const AboutSectionOne = () => {
               ))}
             </div>
 
-            <Link href="/#contact" className="btn-primary">
+            <Link href="/#contact" className="btn-primary" onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+              }
+            }}>
               Work With Us
               <svg
                 width="14"

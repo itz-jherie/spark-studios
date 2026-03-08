@@ -4,19 +4,19 @@ const menuData: Menu[] = [
   {
     id: 1,
     title: "Services",
-    path: "/#services",
-    newTab: false,
-  },
-  {
-    id: 2,
-    title: "Work",
-    path: "/#projects",
+    path: "/services",
     newTab: false,
   },
   {
     id: 3,
-    title: "About",
-    path: "/#about",
+    title: "Careers",
+    path: "/careers",
+    newTab: false,
+  },
+  {
+    id: 4,
+    title: "Blog",
+    path: "/blog",
     newTab: false,
   },
 ];

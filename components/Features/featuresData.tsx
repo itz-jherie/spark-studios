@@ -21,9 +21,9 @@ const featuresData: Feature[] = [
         <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
       </svg>
     ),
-    title: "Framer Design & Development",
+    title: "Framer Development",
     paragraph:
-      "Modern, interactive, high-performance websites using Framer. Pixel-perfect builds and animation-rich pages.",
+      "Modern, interactive, high-performance websites using Framer. Pixel-perfect builds with custom code and overrides.",
   },
   {
     id: 3,
@@ -70,14 +70,13 @@ const featuresData: Feature[] = [
     id: 6,
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2L2 7l10 5 10-5-10-5z" />
-        <path d="M2 17l10 5 10-5" />
-        <path d="M2 12l10 5 10-5" />
+        <circle cx="12" cy="12" r="10" />
+        <path d="M7 11.5L9 8h6l2 3.5M12 21A9 9 0 0 0 21 12H3a9 9 0 0 0 9 9z M12 12L9 20M12 12l3 8" />
       </svg>
     ),
-    title: "Brand Strategy",
+    title: "WordPress Development",
     paragraph:
-      "Comprehensive branding solutions that elevate your identity and online presence.",
+      "Flexible websites powered by WordPress. We build custom themes, eCommerce stores, and high-converting landing pages.",
   },
 ];
 
