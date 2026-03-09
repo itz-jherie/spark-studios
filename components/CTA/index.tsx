@@ -57,7 +57,7 @@ const CTA = () => {
                                 Start Project
                             </Link>
                             <Link
-                                href="https://calendly.com"
+                                href="https://calendly.com/sparkstudioscreatives/30min"
                                 target="_blank"
                                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/20 text-white font-display text-[13px] font-bold uppercase tracking-widest transition-all duration-300 hover:bg-white/10"
                             >
