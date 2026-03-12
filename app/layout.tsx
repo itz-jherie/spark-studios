@@ -1,7 +1,7 @@
-
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
+import CookieBanner from "@/components/CookieBanner";
 import Script from "next/script";
 import "../styles/index.css";
 
@@ -135,6 +135,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <CookieBanner />
         <ScrollToTop />
       </body>
     </html>
