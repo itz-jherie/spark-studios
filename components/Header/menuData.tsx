@@ -19,5 +19,11 @@ const menuData: Menu[] = [
     path: "/blog",
     newTab: false,
   },
+  {
+    id: 5,
+    title: "Templates",
+    path: "https://nurvia-zeta.vercel.app/",
+    newTab: true,
+  },
 ];
 export default menuData;

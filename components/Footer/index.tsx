@@ -32,6 +32,7 @@ const Footer = () => {
               {[
                 { label: "X", href: "https://x.com/sparkstudiosHQ" },
                 { label: "Li", href: "https://www.linkedin.com/company/spark-studiosllc/" },
+                { label: "Tt", href: "https://www.tiktok.com/@sparkstudiosllc" },
               ].map((social) => (
                 <a
                   key={social.label}
@@ -134,6 +135,7 @@ const Footer = () => {
             {[
               { label: "X (Twitter)", href: "https://x.com/sparkstudiosHQ" },
               { label: "LinkedIn", href: "https://www.linkedin.com/company/spark-studiosllc/" },
+              { label: "TikTok", href: "https://www.tiktok.com/@sparkstudiosllc" },
             ].map((s) => (
               <a
                 key={s.label}

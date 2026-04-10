@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import CookieBanner from "@/components/CookieBanner";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import Script from "next/script";
 import "../styles/index.css";
 
@@ -137,6 +138,7 @@ export default function RootLayout({
         <Footer />
         <CookieBanner />
         <ScrollToTop />
+        <FloatingWhatsApp />
       </body>
     </html>
   );
