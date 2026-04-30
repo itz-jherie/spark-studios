@@ -1,0 +1,129 @@
+# Spark Studios - Full Documentation Corpus
+
+This file contains the complete content of Spark Studios' documentation and blog for ingestion by long-context AI agents.
+
+---
+
+## 5 Signs Your Brand Needs a Visual Refresh
+**Category:** Branding
+**Date:** March 8, 2026
+
+### The Silent Killer of Growth is Bad Branding
+Your brand is the combination of all expectations, memories, stories, and relationships that account for a consumer’s decision to choose your product over another. But over time, what once looked cutting-edge can quickly feel dated, misaligned, or outright confusing.
+
+1. **Your Brand No Longer Reflects Your Strategy**: Companies pivot. If you started out selling low-cost B2C software but have pivoted to enterprise B2B solutions, that playful logo and neon color palette might be costing you contracts. Visuals must mature alongside the business model.
+
+2. **You're Missing Consistency**: Does your website look wildly different from your pitch deck? Does your LinkedIn header look like it belongs to a completely different agency than your Instagram? A visual refresh establishes strict brand guidelines that unify your identity across every touchpoint.
+
+3. **You Blend In With Competitors**: Load up the top 5 websites in your niche. If you covered the logos, could you tell them apart? If you are drowning in a "sea of sameness", a refresh can help carve out a unique visual market position.
+
+4. **It Just Feels "Old"**: Trends move faster than ever. If your site looks like it was built in 2015, clients will subconsciously assume your services, speed, and capabilities are also stuck in 2015. Top-tier pricing requires top-tier presentation.
+
+5. **Recruitment is Struggling**: Poor branding acts as a repellant to high-end talent. The best designers, engineers, and marketers want to work for a company that looks like an industry leader, not a laggard.
+
+**The Fix:** You don't always need to burn everything down. Sometimes an evolution is much more effective than a full revolution.
+
+---
+
+## Why We Chose Next.js for High-Performance Applications
+**Category:** Development
+**Date:** February 22, 2026
+
+### The Need for Speed
+At Spark Studios, our primary metric for web development is an uncompromising obsession with speed and user experience. After testing countless frameworks, we confidently standardized our tech stack on Next.js.
+
+- **Server-Side Rendering (SSR) by Default**: Unlike traditional React applications, Next.js renders the HTML on the server. The user gets a fully formed, lightning-fast page instantly.
+- **SEO is Not Optional**: Because Next.js serves absolute HTML on the first request, our clients' pages start ranking faster and scoring higher on Google Lighthouse.
+- **Developer Experience = Better Client Results**: Next.js includes incredible tools like the App Router and built-in image optimization.
+- **The Ecosystem**: Backed by Vercel, Next.js is practically the industry standard for React development.
+
+---
+
+## Mastering the Pitch Deck: What Investors Actually Want
+**Category:** Presentations
+**Date:** February 10, 2026
+
+### The 10-Slide Rule
+Investors review thousands of pitch decks a year. They don't have time to read a novel.
+
+1. **The Hook (Problem)**: Start with a visceral problem.
+2. **The Solution**: Introduce your product as the elegant solution.
+3. **The Market Size (Why Now?)**: Show a multi-billion dollar TAM and explain the timing.
+4. **The Product (Show, Don't Tell)**: Use high-fidelity mockups.
+5. **Business Model & Traction**: How do you make money, and who is paying?
+6. **The Team**: Why are you uniquely qualified?
+
+**Design Tip:** Never use more than 3 bullet points per slide. Never use text smaller than 30pt font.
+
+---
+
+## The Death of the 'Minimalist' Startup Homepage
+**Category:** Strategy
+**Date:** January 14, 2026
+
+### The Sea of Sameness
+For the last five years, almost every B2B and SaaS startup has adopted the exact same aesthetic. It is now completely invisible.
+
+- **The Rise of Brutalism & Max-Minimalism**: High-contrast dark modes, massive typography, raw borders, and smooth micro-animations.
+- **Show the Product**: Use gigantic, full-width videos of the actual product.
+- **What This Means For You**: By adopting a distinct visual identity, you instantly elevate your perceived value.
+
+---
+
+## Framer vs Webflow: Why The Scale Tipped
+**Category:** Development
+**Date:** December 05, 2025
+
+### The Shift in No-Code Paradigm
+- **React Native Roots**: Framer is built on React, making components modular.
+- **Speed of Execution**: Gap between concept and production is nearly zero.
+- **Custom Code & Overrides**: Allows direct React code overrides into any element.
+- **When Do We Still Use Webflow?**: For thousands of complex CMS items with intricate cross-referencing.
+
+---
+
+## The Psychology of High-Converting Landing Pages
+**Category:** Web Design
+**Date:** November 18, 2025
+
+### Design is How it Works
+- **Cognitive Load Theory**: Sites must pass the "Grunt Test" — understand the offer in 5 seconds.
+- **Zeigarnik Effect**: Use progress indicators for multi-step tasks.
+- **Social Proof**: Use real faces, logos, and specific results.
+- **Layouts**: Use F-pattern for text-heavy sites and Z-pattern for conversion-heavy pages.
+
+---
+
+## Unlocking E-commerce Growth with Custom WooCommerce
+**Category:** E-Commerce
+**Date:** October 30, 2025
+
+### Beyond the Template
+- **Total Ownership of Your Data**: You own the database, not renting space.
+- **Limitless Integrations**: WordPress integrates with almost everything.
+- **The Power of Headless**: Use WooCommerce on the backend and Next.js on the frontend for speed and stability.
+
+---
+
+## Your Logo is Not Your Brand
+**Category:** Branding
+**Date:** October 12, 2025
+
+### The Great Misunderstanding
+A brand is a gut feeling. A visual identity system includes:
+- **Typography**: Serious or playful fonts.
+- **Color Theory**: Evoking specific emotions.
+- **Grid and Spacing**: Mathematical laws of whitespace.
+- **Imagery Style**: Photos, illustrations, or 3D renders.
+
+---
+
+## Building Digital Products for the African Market
+**Category:** Strategy
+**Date:** September 25, 2025
+
+### Designing for the Next Billion Users
+- **Data is Expensive**: Speed is everything. Optimize images and assets.
+- **Mobile-First**: Design for the mobile phone first, second, and third.
+- **Trust Indicators**: Use physical addresses, WhatsApp support, and secure payment badges.
+- **The Future is African**: Electric energy in the tech ecosystem.

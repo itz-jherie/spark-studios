@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spark Studios — AI Product Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      background: #F7F7F8;
+      font-family: 'Inter', Helvetica, Arial, sans-serif;
+      color: #0D0D0D
+    }
+
+    .wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #FFFFFF
+    }
+
+    .font-editorial {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 400;
+      color: #4A6CF7;
+    }
+
+    .header {
+      background: #FFFFFF;
+      padding: 32px 40px;
+      text-align: center;
+      border-bottom: 1px solid #0D0D0D;
+    }
+
+    .header-brand {
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      color: #0D0D0D;
+      text-transform: uppercase;
+      font-weight: 400
+    }
+
+    .header-sub {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: #888888;
+      margin-top: 4px;
+      text-transform: uppercase
+    }
+
+    .hero {
+      padding: 48px 40px 36px;
+      border-bottom: 1px solid #f0f0f0
+    }
+
+    .hero-tag {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      color: #6E6E78;
+      text-transform: uppercase;
+      margin-bottom: 16px
+    }
+
+    .hero-headline {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      line-height: 1.35;
+      color: #0D0D0D;
+      margin-bottom: 20px
+    }
+
+    .hero-headline strong {
+      font-weight: 900;
+      color: #4A6CF7;
+    }
+
+    .hero-body {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #6E6E78;
+    }
+
+    .section {
+      padding: 36px 40px;
+      border-bottom: 1px solid #f0f0f0
+    }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      color: #888888;
+      text-transform: uppercase;
+      margin-bottom: 20px
+    }
+
+    .service-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 16px
+    }
+
+    .service-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #0a0a0a;
+      margin-top: 7px;
+      flex-shrink: 0
+    }
+
+    .service-text {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333333
+    }
+
+    .service-text strong {
+      color: #0a0a0a;
+      font-weight: 500
+    }
+
+    .portfolio-link {
+      display: inline-block;
+      margin-top: 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #4A6CF7;
+      text-decoration: none;
+      border-bottom: 1px solid #4A6CF7;
+      padding-bottom: 2px;
+      transition: all 0.2s ease;
+    }
+
+    .proof-section {
+      padding: 36px 40px;
+      border-bottom: 1px solid #f0f0f0;
+      background: #fafaf8
+    }
+
+    .proof-label {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      color: #888888;
+      text-transform: uppercase;
+      margin-bottom: 16px
+    }
+
+    .proof-body {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #444444
+    }
+
+    .cta-section {
+      padding: 40px;
+      text-align: center
+    }
+
+    .cta-headline {
+      font-size: 18px;
+      font-weight: 400;
+      color: #0a0a0a;
+      margin-bottom: 8px
+    }
+
+    .cta-sub {
+      font-size: 13px;
+      color: #888888;
+      margin-bottom: 28px;
+      line-height: 1.6
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #4A6CF7;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 16px 36px;
+      border-radius: 0px;
+    }
+
+    .footer {
+      background: #f4f4f0;
+      padding: 24px 40px;
+      text-align: center;
+      border-top: 1px solid #e8e8e8
+    }
+
+    .footer-brand {
+      font-size: 12px;
+      font-weight: 500;
+      color: #0a0a0a;
+      letter-spacing: 0.1em;
+      text-transform: uppercase
+    }
+
+    .footer-links {
+      margin-top: 8px;
+      font-size: 11px;
+      color: #888888
+    }
+
+    .footer-links a {
+      color: #888888;
+      text-decoration: none;
+      margin: 0 8px
+    }
+
+    .footer-unsub {
+      margin-top: 12px;
+      font-size: 10px;
+      color: #bbbbbb
+    }
+
+    .divider {
+      height: 1px;
+      background: #f0f0f0;
+      margin: 0
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="header">
+      <!-- To add your logo, put the exact URL inside the src="" below -->
+      <img src="https://sparkstudios.qzz.io/images/logo/logospark1.png" alt="Spark Studios" width="120" style="margin-bottom: 8px;" />
+      <div class="header-sub">Creative Agency</div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-tag">For product brands & independent businesses</div>
+      <h1 class="hero-headline">Your product deserves visuals that <span class="font-editorial">actually sell it.</span></h1>
+      <p class="hero-body">
+        Hi there,<br><br>
+        We came across your brand and genuinely love what you are building.
+        Your product is great — but in 2025, great products need premium visuals to truly compete.
+        Customers make buying decisions in seconds, entirely based on what they see.<br><br>
+        We create campaign-quality product photography and video ads using AI —
+        no studio booking, no model fees, no photographer invoices.
+        Just visuals that look like you spent thousands, delivered exceptionally fast.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-label">What we deliver</div>
+      <div class="service-row">
+        <div class="service-dot"></div>
+        <div class="service-text"><strong>AI product photography</strong> — hero shots, lifestyle scenes, flat lays and
+          editorial compositions for your website and ads</div>
+      </div>
+      <div class="service-row">
+        <div class="service-dot"></div>
+        <div class="service-text"><strong>UGC-style video ads</strong> — authentic creator-style videos that perform on
+          TikTok and Instagram without hiring anyone</div>
+      </div>
+      <div class="service-row">
+        <div class="service-dot"></div>
+        <div class="service-text"><strong>AI video ads</strong> — cinematic product videos for Meta, TikTok and YouTube
+          ads</div>
+      </div>
+      <div class="service-row">
+        <div class="service-dot"></div>
+        <div class="service-text"><strong>Brand graphics & social content</strong> — consistent visuals across every
+          platform your brand lives on</div>
+      </div>
+
+      <a href="https://drive.google.com/drive/folders/13NYj0W8RWO-d5gNNZMBIF2j2sfAsWEmV?usp=sharing" class="portfolio-link" target="_blank" rel="noopener noreferrer">Click here to view our portfolio of work &rarr;</a>
+    </div>
+
+    <div class="proof-section">
+      <div class="proof-label">Why it works</div>
+      <p class="proof-body">
+        Businesses running ads already know visuals drive results.
+        The problem is traditional photoshoots are expensive, slow, and hard to scale.
+        Our AI-driven workflow delivers the same campaign quality —
+        at a fraction of the cost and in days, not weeks.<br><br>
+        We've created visuals for skincare brands, jewelry campaigns,
+        real estate, food and restaurant brands, car detailing, fashion and more.
+        If you sell it, we can shoot it.
+      </p>
+    </div>
+
+    <div class="cta-section">
+      <div class="cta-headline">Ready to see what we can do for your brand?</div>
+      <div class="cta-sub">
+        Simple process — you tell us what you need,<br>
+        we deliver, you pay only when you're satisfied.
+      </div>
+      <a href="mailto:hello@sparkstudios.qzz.io" class="cta-button">Reply to this email</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="footer">
+      <div class="footer-brand">Spark Studios Creative Agency</div>
+      <div class="footer-links">
+        <a href="https://sparkstudios.qzz.io">Website</a>
+        <a href="https://drive.google.com/drive/folders/13NYj0W8RWO-d5gNNZMBIF2j2sfAsWEmV?usp=sharing" target="_blank" rel="noopener noreferrer">Portfolio</a>
+        <a href="https://x.com/sparkstudiosHQ">Twitter</a>
+        <a href="https://www.linkedin.com/company/spark-studiosllc/">LinkedIn</a>
+        <a href="https://www.tiktok.com/@sparkstudiosllc" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+      <div class="footer-unsub">
+        You're receiving this because your brand was found through public business listings.<br>
+        <a href="#" style="color:#bbbbbb;">Unsubscribe</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

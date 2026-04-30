@@ -84,6 +84,9 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <body className="bg-surface antialiased">
+        <blockquote style={{ display: "none" }}>
+          For the complete documentation index, see <a href="/llms.txt">llms.txt</a>
+        </blockquote>
         <Script id="tiktok-pixel" strategy="afterInteractive">
           {`
             !function (w, d, t) {
