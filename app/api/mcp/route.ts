@@ -45,7 +45,7 @@ export async function POST(request: NextRequest) {
 }
 
 export async function GET() {
-  return new NextResponse('Spark Studios MCP Server. Use POST for JSON-RPC requests.', {
+  return new NextResponse('Flynth Technologies MCP Server. Use POST for JSON-RPC requests.', {
     status: 200,
     headers: { 'Content-Type': 'text/plain' }
   });

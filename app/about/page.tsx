@@ -5,10 +5,13 @@ import Link from "next/link";
 export const metadata = {
   title: "About Us",
   description: "A creative studio built on the belief that extraordinary design is the most powerful competitive advantage a brand can have.",
+  alternates: {
+    canonical: "/about",
+  },
   openGraph: {
-    title: "About Us | Spark Studios",
+    title: "About Us | Flynth Technologies",
     description: "A creative studio built on the belief that extraordinary design is the most powerful competitive advantage a brand can have.",
-    url: "https://sparkstudios.qzz.io/about",
+    url: "https://flynth.com.ng/about",
   },
 };
 

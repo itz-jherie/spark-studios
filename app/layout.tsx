@@ -8,15 +8,15 @@ import "../styles/index.css";
 
 export const metadata = {
   title: {
-    template: "%s | Spark Studios",
-    default: "Spark Studios | Design That Makes Brands Impossible to Ignore",
+    template: "%s | Flynth Technologies",
+    default: "Flynth Technologies | Built strong. Delivered fast.",
   },
   description:
-    "Spark Studios is an elite creative agency specializing in stunning visuals, high-performance web development, WordPress, Framer websites, and memorable digital experiences. Offices in Toronto and Abuja.",
+    "Flynth Technologies is an elite digital engineering agency specializing in high-performance web applications, secure platforms, custom digital experiences, and scalable systems. Built strong. Delivered fast.",
   keywords: [
     // Core Services
-    "creative agency", "web design", "web development", "WordPress development", "WordPress agency", "Framer design", "brand strategy", "digital experiences",
-    "Spark Studios", "UI/UX design", "product design agency", "SaaS web design", "startup web design", "B2B web design",
+    "digital agency", "web design", "web development", "WordPress development", "WordPress agency", "Framer design", "brand strategy", "digital experiences",
+    "Flynth", "Flynth Technologies", "UI/UX design", "product design agency", "SaaS web design", "startup web design", "B2B web design",
     "branding agency", "logo design", "identity design", "pitch deck design", "presentation design",
     // Location Based keywords
     "Toronto web design", "Toronto creative agency", "Toronto branding agency", "Toronto UI/UX agency",
@@ -27,10 +27,13 @@ export const metadata = {
     "high performance websites", "animated websites", "Awwwards winning design", "premium web design",
     "luxury brand identity", "modern web design"
   ],
-  authors: [{ name: "Spark Studios", url: "https://sparkstudios.qzz.io" }],
-  creator: "Spark Studios",
-  publisher: "Spark Studios",
-  metadataBase: new URL('https://sparkstudios.qzz.io'), // Absolute path for crawler resolution
+  authors: [{ name: "Flynth Technologies", url: "https://flynth.com.ng" }],
+  creator: "Flynth Technologies",
+  publisher: "Flynth Technologies",
+  metadataBase: new URL('https://flynth.com.ng'), // Absolute path for crawler resolution
+  alternates: {
+    canonical: './',
+  },
   robots: {
     index: true,
     follow: true,
@@ -49,17 +52,17 @@ export const metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Spark Studios | Design That Makes Brands Impossible to Ignore",
+    title: "Flynth Technologies | Built strong. Delivered fast.",
     description:
-      "Spark Studios is an elite creative agency specializing in stunning visuals, high-performance web development, WordPress, Framer websites, and memorable digital experiences. Offices in Toronto and Abuja.",
-    url: "https://sparkstudios.qzz.io",
-    siteName: "Spark Studios",
+      "Flynth Technologies is an elite digital engineering agency specializing in high-performance web applications, secure platforms, custom digital experiences, and scalable systems. Built strong. Delivered fast.",
+    url: "https://flynth.com.ng",
+    siteName: "Flynth Technologies",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Spark Studios Open Graph Image",
+        alt: "Flynth Technologies Open Graph Image",
       },
     ],
     locale: "en_US",
@@ -67,13 +70,20 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spark Studios | Design That Makes Brands Impossible to Ignore",
+    title: "Flynth Technologies | Built strong. Delivered fast.",
     description:
-      "Spark Studios is an elite creative agency specializing in stunning visuals, high-performance web development, WordPress, Framer websites, and memorable digital experiences. Offices in Toronto and Abuja.",
-    creator: "@sparkstudiosHQ",
-    images: ["/images/og-image.jpg"],
+      "Flynth Technologies is an elite digital engineering agency specializing in high-performance web applications, secure platforms, custom digital experiences, and scalable systems. Built strong. Delivered fast.",
+    creator: "@flynthtech",
+    images: ["/images/og-image.png"],
   },
-  category: "design",
+  category: "technology",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -83,7 +93,11 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className="bg-surface antialiased">
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+        <link rel="shortcut icon" href="/favicon.svg?v=2" />
+      </head>
+      <body suppressHydrationWarning className="bg-surface antialiased">
         <blockquote style={{ display: "none" }}>
           For the complete documentation index, see <a href="/llms.txt">llms.txt</a>
         </blockquote>
@@ -104,34 +118,34 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "ProfessionalService",
-              "name": "Spark Studios",
-              "url": "https://sparkstudios.qzz.io",
-              "logo": "https://sparkstudios.qzz.io/images/logospark3.png",
-              "image": "https://sparkstudios.qzz.io/images/og-image.jpg",
-              "description": "Spark Studios is an elite creative agency specializing in stunning visuals, high-performance web development, WordPress, Framer websites, and memorable digital experiences.",
+              "@type": ["ProfessionalService", "LocalBusiness"],
+              "name": "Flynth Technologies",
+              "url": "https://flynth.com.ng",
+              "logo": "https://flynth.com.ng/images/logo/logo.svg",
+              "image": "https://flynth.com.ng/images/og-image.jpg",
+              "description": "Flynth Technologies is an elite digital engineering agency specializing in high-performance web applications, secure platforms, custom digital experiences, and scalable systems.",
               "address": [
-                {
-                  "@type": "PostalAddress",
-                  "addressLocality": "Toronto",
-                  "addressCountry": "Canada"
-                },
                 {
                   "@type": "PostalAddress",
                   "addressLocality": "Abuja",
                   "addressRegion": "FCT",
                   "addressCountry": "Nigeria"
+                },
+                {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Toronto",
+                  "addressCountry": "Canada"
                 }
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
-                "email": "hello@sparkstudios.qzz.io",
+                "email": "flynthtechnologies@gmail.com",
                 "contactType": "customer service",
                 "availableLanguage": "English"
               },
               "sameAs": [
-                "https://x.com/sparkstudiosHQ",
-                "https://linkedin.com/company/spark-studios"
+                "https://x.com/flynthtech",
+                "https://linkedin.com/company/flynth-technologies"
               ]
             })
           }}

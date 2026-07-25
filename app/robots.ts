@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/signin', '/signup', '/privacy'],
     },
-    sitemap: 'https://sparkstudios.qzz.io/sitemap.xml',
+    sitemap: 'https://flynth.com.ng/sitemap.xml',
   };
 }

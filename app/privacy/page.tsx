@@ -1,6 +1,6 @@
 export const metadata = {
     title: "Privacy Policy",
-    description: "Privacy Policy for Spark Studios.",
+    description: "Privacy Policy for Flynth Technologies.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
                         Last updated: March 2026
                     </p>
                     <p className="mb-6 text-ink-3 dark:text-gray-400">
-                        At Spark Studios, we respect your privacy and are committed to protecting it through our compliance with this policy.
+                        At Flynth Technologies, we respect your privacy and are committed to protecting it through our compliance with this policy.
                     </p>
 
                     <h2 className="text-2xl font-bold mt-12 mb-4 text-ink dark:text-white">1. Cookies & Tracking Technologies</h2>
@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
 
                     <h2 className="text-2xl font-bold mt-12 mb-4 text-ink dark:text-white">2. Contact Us</h2>
                     <p className="text-ink-3 dark:text-gray-400">
-                        If you have any questions about this Privacy Policy, please contact us at <a href="mailto:hello@sparkstudios.qzz.io" className="text-primary hover:underline">hello@sparkstudios.qzz.io</a>.
+                        If you have any questions about this Privacy Policy, please contact us at <a href="mailto:flynthtechnologies@gmail.com" className="text-primary hover:underline">flynthtechnologies@gmail.com</a>.
                     </p>
                 </div>
             </div>

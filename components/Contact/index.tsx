@@ -69,17 +69,15 @@ const Contact = () => {
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                   <path d="M22 7l-10 7L2 7" />
                 </svg>
-                hello@sparkstudios.qzz.io
+                flynthtechnologies@gmail.com
               </div>
               <div className="flex items-start gap-3 text-[14px] text-ink-2">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-primary flex-shrink-0 mt-0.5">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <div>
-                  <p>Toronto, Canada</p>
                   <p>Abuja, Nigeria</p>
-                </div>
+                  <p>Worldwide</p>
               </div>
             </div>
           </div>
@@ -96,7 +94,7 @@ const Contact = () => {
               </p>
 
               <a
-                href="mailto:hello@sparkstudios.qzz.io?subject=New%20Project%20Enquiry%20%E2%80%94%20Spark%20Studios"
+                href="mailto:flynthtechnologies@gmail.com?subject=New%20Project%20Enquiry%20%E2%80%94%20Flynth%20Technologies"
                 onClick={(e) => {
                   // Capture currentTarget synchronously before entering async promise context
                   const btn = e.currentTarget;
@@ -104,7 +102,7 @@ const Contact = () => {
                   // We do NOT prevent default here so mobile browsers can natively open their email clients.
                   // But we still attempt to copy to clipboard (mostly useful for PC users where mailto might fail).
                   if (navigator.clipboard && navigator.clipboard.writeText) {
-                    navigator.clipboard.writeText("hello@sparkstudios.qzz.io").then(() => {
+                    navigator.clipboard.writeText("flynthtechnologies@gmail.com").then(() => {
                       if (!btn) return;
                       const originalText = btn.innerHTML;
                       btn.innerHTML = `

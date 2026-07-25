@@ -1,9 +1,31 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import CTA from "@/components/CTA";
 import EmailButton from "@/components/Common/EmailButton";
 import { blogPosts } from "./blogData";
 
-
+export const metadata: Metadata = {
+  title: "Journal & Insights | Flynth Technologies",
+  description: "Deep dives into design psychology, web development strategies, branding, and how to build digital products that refuse to be ignored. Written by Flynth Technologies.",
+  alternates: {
+    canonical: "https://flynth.com.ng/blog",
+  },
+  openGraph: {
+    title: "Journal & Insights | Flynth Technologies",
+    description: "Deep dives into design psychology, web development strategies, branding, and how to build digital products that refuse to be ignored.",
+    url: "https://flynth.com.ng/blog",
+    siteName: "Flynth Technologies",
+    type: "website",
+    images: [{ url: "https://flynth.com.ng/images/og-blog.png", width: 1200, height: 630, alt: "Flynth Journal — Design & Development Insights" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Journal & Insights | Flynth Technologies",
+    description: "Deep dives into design psychology, web development, and brand strategy from Flynth Technologies.",
+    creator: "@flynthtech",
+    images: ["https://flynth.com.ng/images/og-blog.png"],
+  },
+};
 
 const BlogPage = () => {
     return (

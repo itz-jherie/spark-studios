@@ -4,12 +4,12 @@ export const blogPosts = [
     category: "Branding",
     title: "5 Signs Your Brand Needs a Visual Refresh",
     excerpt: "In a crowded market, standing out is essential. Here are the clear indicators that your branding is holding your business back and how to fix it.",
-    author: "Spark Studios",
+    author: "Flynth Technologies",
     date: "March 8, 2026",
     readTime: "5 min read",
     content: `
       <h2>The Silent Killer of Growth is Bad Branding</h2>
-      <p>Your brand is the combination of all expectations, memories, stories, and relationships that account for a consumer’s decision to choose your product over another. But over time, what once looked cutting-edge can quickly feel dated, misaligned, or outright confusing.</p>
+      <p>Your brand is the combination of all expectations, memories, stories, and relationships that account for a consumer's decision to choose your product over another. But over time, what once looked cutting-edge can quickly feel dated, misaligned, or outright confusing.</p>
 
       <h3>1. Your Brand No Longer Reflects Your Strategy</h3>
       <p>Companies pivot. If you started out selling low-cost B2C software but have pivoted to enterprise B2B solutions, that playful logo and neon color palette might be costing you contracts. Visuals must mature alongside the business model.</p>
@@ -34,12 +34,12 @@ export const blogPosts = [
     category: "Development",
     title: "Why We Chose Next.js for High-Performance Applications",
     excerpt: "Speed matters. We break down our tech stack and explain why server-side rendering is non-negotiable for modern web apps.",
-    author: "Spark Studios",
+    author: "Flynth Technologies",
     date: "February 22, 2026",
     readTime: "8 min read",
     content: `
       <h2>The Need for Speed</h2>
-      <p>At Spark Studios, our primary metric for web development is an uncompromising obsession with speed and user experience. After testing countless frameworks, we confidently standardized our tech stack on Next.js.</p>
+      <p>At Flynth Technologies, our primary metric for web development is an uncompromising obsession with speed and user experience. After testing countless frameworks, we confidently standardized our tech stack on Next.js.</p>
 
       <h3>Server-Side Rendering (SSR) by Default</h3>
       <p>Unlike traditional React applications (Single Page Apps) that ship massive JavaScript bundles to the browser and force the user's phone to do the heavy lifting of rendering, Next.js renders the HTML on the server. The user gets a fully formed, lightning-fast page instantly. Then, the interactivity "hydrates" in the background.</p>
@@ -59,7 +59,7 @@ export const blogPosts = [
     category: "Presentations",
     title: "Mastering the Pitch Deck: What Investors Actually Want",
     excerpt: "We've designed decks that raised millions. This is the exact slide structure you need to close your next funding round.",
-    author: "Spark Studios",
+    author: "Flynth Technologies",
     date: "February 10, 2026",
     readTime: "6 min read",
     content: `
@@ -92,7 +92,7 @@ export const blogPosts = [
     category: "Strategy",
     title: "The Death of the 'Minimalist' Startup Homepage",
     excerpt: "Why the standard white-space-and-boring-font SaaS website is dying, and what high-converting brands are doing instead.",
-    author: "Spark Studios",
+    author: "Flynth Technologies",
     date: "January 14, 2026",
     readTime: "4 min read",
     content: `
@@ -104,7 +104,7 @@ export const blogPosts = [
       <p>Brands are realizing that to stand out, they have to take risks. We are seeing a massive shift towards what we call "Premium Brutalism" — high-contrast dark modes, massive, unapologetic typography, raw borders, and ultra-smooth micro-animations that make the site feel like a living application.</p>
 
       <h3>Show the Product</h3>
-      <p>Instead of abstract illustrations, top-tier brands are now placing gigantic, full-width, auto-playing videos of their actual product right in the hero section. Users don't want to readmarketing copy; they want to see what the dashboard looks like.</p>
+      <p>Instead of abstract illustrations, top-tier brands are now placing gigantic, full-width, auto-playing videos of their actual product right in the hero section. Users don't want to read marketing copy; they want to see what the dashboard looks like.</p>
 
       <h3>What This Means For You</h3>
       <p>If your website looks like every other competitor in your space, you are forced to compete entirely on price. By adopting a distinct, memorable, and premium visual identity, you instantly elevate your perceived value. Don't be afraid to use color. Don't be afraid to use massive typography. Be aggressive in your digital footprint.</p>
@@ -115,18 +115,18 @@ export const blogPosts = [
     category: "Development",
     title: "Framer vs Webflow: Why The Scale Tipped",
     excerpt: "We build high-performance marketing sites. Here is our rigorous breakdown of why Framer is rapidly overtaking the visual development landscape.",
-    author: "Spark Studios",
+    author: "Flynth Technologies",
     date: "December 05, 2025",
     readTime: "7 min read",
     content: `
       <h2>The Shift in No-Code Paradigm</h2>
-      <p>For years, Webflow was the undisputed king of visual development. However, over the past 24 months, a massive migration has occurred towards Framer. At Spark Studios, we've felt this shift firsthand. Here’s why we now recommend Framer for 90% of our marketing site builds.</p>
+      <p>For years, Webflow was the undisputed king of visual development. However, over the past 24 months, a massive migration has occurred towards Framer. At Flynth, we've felt this shift firsthand. Here's why we now recommend Framer for 90% of our marketing site builds.</p>
 
       <h3>React Native Roots</h3>
       <p>Framer is built fundamentally differently than Webflow. While Webflow is essentially a visual wrapper over traditional HTML/CSS, Framer is built on React. This means the components we build in Framer operate like true modular web components.</p>
 
       <h3>Speed of Execution</h3>
-      <p>Because Framer’s interface was born from the design tool world, the gap between concept and production is nearly zero. What used to take us three weeks in Webflow can frequently be built, animated, and deployed perfectly in Framer in a single week. For startups, time to market is money.</p>
+      <p>Because Framer's interface was born from the design tool world, the gap between concept and production is nearly zero. What used to take us three weeks in Webflow can frequently be built, animated, and deployed perfectly in Framer in a single week. For startups, time to market is money.</p>
 
       <h3>Custom Code & Overrides</h3>
       <p>One of the biggest misconceptions is that Framer is "too simple" for complex builds. The reality is that Framer allows us to inject direct React code overrides into any element on the canvas. If visual tools can't do it, our developers just write the React logic natively into the canvas.</p>
@@ -140,12 +140,12 @@ export const blogPosts = [
     category: "Web Design",
     title: "The Psychology of High-Converting Landing Pages",
     excerpt: "Beautiful design doesn't guarantee sales. Learn the cognitive biases and psychological triggers that turn passive visitors into paying customers.",
-    author: "Spark Studios",
+    author: "Flynth Technologies",
     date: "November 18, 2025",
     readTime: "6 min read",
     content: `
       <h2>Design is How it Works</h2>
-      <p>Many agencies prioritize how a landing page looks over how it functions chemically in a user's brain. At Spark Studios, every pixel we place is backed by behavioral psychology. Here are the core principles of high-converting pages.</p>
+      <p>Many agencies prioritize how a landing page looks over how it functions chemically in a user's brain. At Flynth, every pixel we place is backed by behavioral psychology. Here are the core principles of high-converting pages.</p>
 
       <h3>The Cognitive Load Theory</h3>
       <p>The brain consumes immense energy processing new information. If your hero section requires a user to read three paragraphs to understand what you sell, they will bounce. The best sites adhere to the "Grunt Test" — could a caveman look at your site for 5 seconds and grunt out exactly what you offer?</p>
@@ -154,7 +154,7 @@ export const blogPosts = [
       <p>People hate unfinished tasks. If you have a multi-step onboarding form, clearly showing a progress bar (e.g., "Step 1 of 3") significantly increases the likelihood that a user will finish it compared to a blank form.</p>
 
       <h3>Social Proof vs. Social Noise</h3>
-      <p>Putting a generic quote from "John D." on your site does nothing. Humans are tribal and seek authority. You must use real faces, real company logos, and specifically highlight results rather than generalized praise. "Spark helped us grow by 20%" is infinitely better than "Spark is great to work with."</p>
+      <p>Putting a generic quote from "John D." on your site does nothing. Humans are tribal and seek authority. You must use real faces, real company logos, and specifically highlight results rather than generalized praise. "Flynth helped us grow by 20%" is infinitely better than "Flynth is great to work with."</p>
 
       <h3>F-Pattern vs. Z-Pattern Layouts</h3>
       <p>By mapping eye-tracking studies, we know exactly where a user looks. Heavy text sites should use an F-pattern layout. But for marketing sites pushing a Call-to-Action, the Z-pattern (Logo top left, Navigation top right, Diagonal sweep to the Hero text, straight across to the Primary button) forces the eye directly to your checkout.</p>
@@ -165,7 +165,7 @@ export const blogPosts = [
     category: "E-Commerce",
     title: "Unlocking E-commerce Growth with Custom WooCommerce",
     excerpt: "Why settling for out-of-the-box Shopify themes might be bottlenecking your sales, and the power of a custom headless WooCommerce build.",
-    author: "Spark Studios",
+    author: "Flynth Technologies",
     date: "October 30, 2025",
     readTime: "5 min read",
     content: `
@@ -187,7 +187,7 @@ export const blogPosts = [
     category: "Branding",
     title: "Your Logo is Not Your Brand",
     excerpt: "The most common and expensive mistake founders make when trying to establish their visual identity.",
-    author: "Spark Studios",
+    author: "Flynth Technologies",
     date: "October 12, 2025",
     readTime: "4 min read",
     content: `
@@ -214,12 +214,12 @@ export const blogPosts = [
     category: "Strategy",
     title: "Building Digital Products for the African Market",
     excerpt: "It takes more than localized currency to win in Africa. A deep dive into the UX/UI principles required for the fast-growing tech landscape.",
-    author: "Spark Studios",
+    author: "Flynth Technologies",
     date: "September 25, 2025",
     readTime: "6 min read",
     content: `
       <h2>Designing for the Next Billion Users</h2>
-      <p>With offices in both Toronto and Abuja, Spark Studios sits at a unique intersection of global design standards and deep local market understanding. Launching a digital product in Nigeria, Kenya, or South Africa requires specific architectural and design principles that Silicon Valley often ignores.</p>
+      <p>Based in Abuja and serving clients worldwide, Flynth Technologies sits at a unique intersection of global design standards and deep local market understanding. Launching a digital product in Nigeria, Kenya, or South Africa requires specific architectural and design principles that Silicon Valley often ignores.</p>
 
       <h3>Data is Expensive. Speed is Everything.</h3>
       <p>The average internet speed and cost of data in many African markets dictates how a site must be built. You cannot load a 10MB autoplaying video on the hero section of a fintech app targeting rural users. We aggressively utilize Next.js image optimization, lazy loading, and asset minification to ensure our sites load instantly even on 3G connections.</p>

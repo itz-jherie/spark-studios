@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -13,16 +12,11 @@ const Footer = () => {
               href="/"
               className="flex items-center gap-3 mb-6 transition-opacity hover:opacity-80 group"
             >
-              <Image
-                src="/images/logo/logospark3.png"
-                alt="Spark Studios Icon"
-                width={32}
-                height={32}
-                className="h-8 w-auto object-contain"
+              <img
+                src="/images/logo/flynth-horizontal-everyday-monochrome-white.svg"
+                alt="Flynth Technologies"
+                className="h-8 md:h-10 w-auto object-contain"
               />
-              <span className="font-display font-black text-[20px] uppercase tracking-tight text-white group-hover:text-primary transition-colors duration-200">
-                Spark Studios
-              </span>
             </Link>
             <p className="text-[14px] leading-[1.8] text-ink-4 mb-8 max-w-[300px]">
               We Design. Develop. Deliver. Powerful digital experiences for brands that want to stand out.
@@ -30,9 +24,9 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex items-center gap-3">
               {[
-                { label: "X", href: "https://x.com/sparkstudiosHQ" },
-                { label: "Li", href: "https://www.linkedin.com/company/spark-studiosllc/" },
-                { label: "Tt", href: "https://www.tiktok.com/@sparkstudiosllc" },
+                { label: "X", href: "https://x.com/flynthtech" },
+                { label: "Li", href: "https://www.linkedin.com/company/flynth-technologies" },
+                { label: "Tt", href: "https://www.tiktok.com/@flynthtech" },
               ].map((social) => (
                 <a
                   key={social.label}
@@ -54,12 +48,12 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               {[
-                "Graphics Design",
-                "Framer Development",
+                "Web & Mobile App Development",
                 "WordPress Development",
+                "Framer Development",
                 "Web Design",
-                "Web Development",
                 "Slides Design",
+                "Graphics Design",
               ].map((item) => (
                 <li key={item}>
                   <a
@@ -106,19 +100,20 @@ const Footer = () => {
                 <a
                   href="/#contact"
                   className="text-[14px] text-ink-4 transition-colors duration-200 hover:text-white"
-                  onClick={(e) => {
-                    if (window.location.pathname === "/") {
+                onClick={(e) => {
+                    const pathname = window.location.pathname;
+                    if (pathname === "/") {
                       e.preventDefault();
                       document.getElementById("contact")?.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
                 >
-                  hello@sparkstudios.qzz.io
+                  flynthtechnologies@gmail.com
                 </a>
               </li>
               <li className="text-[14px] text-ink-4">
-                <p>Toronto, Canada</p>
                 <p>Abuja, Nigeria</p>
+                <p>Worldwide</p>
               </li>
             </ul>
           </div>
@@ -129,13 +124,13 @@ const Footer = () => {
       <div className="border-t border-white/10">
         <div className="container py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[12px] text-ink-4 uppercase tracking-widest">
-            © 2025 Spark Studios. All rights reserved.
+            © 2026 Flynth Technologies. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {[
-              { label: "X (Twitter)", href: "https://x.com/sparkstudiosHQ" },
-              { label: "LinkedIn", href: "https://www.linkedin.com/company/spark-studiosllc/" },
-              { label: "TikTok", href: "https://www.tiktok.com/@sparkstudiosllc" },
+              { label: "X (Twitter)", href: "https://x.com/flynthtech" },
+              { label: "LinkedIn", href: "https://www.linkedin.com/company/flynth-technologies" },
+              { label: "TikTok", href: "https://www.tiktok.com/@flynthtech" },
             ].map((s) => (
               <a
                 key={s.label}

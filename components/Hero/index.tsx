@@ -56,7 +56,7 @@ const Hero = () => {
                   <path id="circlePath" d="M 70, 70 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" fill="none" />
                   <text className="text-[10px] font-bold uppercase tracking-[0.2em] fill-current">
                     <textPath href="#circlePath" startOffset="0" textLength="314" lengthAdjust="spacing">
-                      SPARK STUDIOS • CREATIVE AGENCY •
+                      FLYNTH TECHNOLOGIES • DIGITAL AGENCY •
                     </textPath>
                   </text>
                 </svg>
@@ -66,8 +66,7 @@ const Hero = () => {
             <div className="max-w-[360px] will-reveal animate-slide-up" style={{ animationDelay: '0.5s' }}>
               <div className="w-12 h-1 bg-primary mb-6 lg:ml-auto" />
               <p className="text-[16px] font-medium leading-[1.7] text-ink-3">
-                Spark Studios creates stunning visuals, high-performance websites,
-                and memorable digital experiences for brands that want to stand out globally.
+                Flynth Technologies engineers powerful digital systems, high-performance websites, and resilient platforms. Built strong. Delivered fast.
               </p>
 
               <div className="mt-8 flex flex-row gap-4 lg:justify-end">

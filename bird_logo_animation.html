@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flynth Falcon Motion Graphic — Brand Name Variants</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Poppins:wght@300;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #1D2144;
+      --accent: #4A6CF7;
+      --card-bg: rgba(255, 255, 255, 0.06);
+      --border-color: rgba(255, 255, 255, 0.12);
+      --text-color: #ffffff;
+      --sub-color: rgba(255, 255, 255, 0.7);
+      --yellow: #FBB040;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--bg-color);
+      font-family: 'Inter', sans-serif;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: var(--text-color);
+      transition: background-color 0.5s ease;
+    }
+
+    /* Ambient Background Radial Glow */
+    .ambient-glow {
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(74, 108, 247, 0.35) 0%, rgba(101, 131, 255, 0.08) 45%, transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      animation: pulseGlow 4s ease-in-out infinite alternate;
+    }
+
+    /* Structural Grid Backdrop */
+    .grid-backdrop {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 10%;
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    .grid-line {
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent 0%, var(--accent) 50%, transparent 100%);
+    }
+
+    /* Stage Area */
+    .stage {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Falcon Mark Canvas */
+    .bird-svg-canvas {
+      width: 320px;
+      height: 320px;
+      filter: drop-shadow(0 20px 50px rgba(74, 108, 247, 0.55));
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.4s ease;
+    }
+
+    /* Pure Vector Shard Styling & Direct Smooth Assembly */
+    .vector-shard {
+      opacity: 0;
+      transform: translate(var(--dx), var(--dy)) rotate(var(--rot)) scale(0.6);
+      animation: assembleShard 1.2s cubic-bezier(0.25, 1, 0.5, 1) var(--delay) forwards;
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease, fill 0.3s ease;
+    }
+
+    .vector-shard:hover {
+      filter: brightness(1.25) drop-shadow(0 0 15px #6583FF);
+    }
+
+    /* Interactive Hover Separation */
+    .bird-svg-canvas:hover .shard-1 { transform: translate(-30px, -24px) rotate(-8deg); }
+    .bird-svg-canvas:hover .shard-2 { transform: translate(30px, -20px) rotate(10deg); }
+    .bird-svg-canvas:hover .shard-3 { transform: translate(-36px, -5px) rotate(-6deg); }
+    .bird-svg-canvas:hover .shard-4 { transform: translate(25px, -8px) rotate(16deg); }
+    .bird-svg-canvas:hover .shard-5 { transform: translate(-24px, 28px) rotate(-12deg); }
+    .bird-svg-canvas:hover .shard-6 { transform: translate(-8px, 36px) rotate(8deg); }
+    .bird-svg-canvas:hover .shard-7 { transform: translate(30px, 15px) rotate(12deg); }
+    .bird-svg-canvas:hover .shard-8 { transform: translate(22px, 28px) rotate(-8deg); }
+
+    /* Exploded Active State */
+    .bird-svg-canvas.exploded .shard-1 { transform: translate(-120px, -95px) rotate(-30deg); opacity: 0.9; }
+    .bird-svg-canvas.exploded .shard-2 { transform: translate(135px, -75px) rotate(25deg); opacity: 0.9; }
+    .bird-svg-canvas.exploded .shard-3 { transform: translate(-140px, -12px) rotate(-20deg); opacity: 0.9; }
+    .bird-svg-canvas.exploded .shard-4 { transform: translate(110px, -25px) rotate(70deg); opacity: 0.9; }
+    .bird-svg-canvas.exploded .shard-5 { transform: translate(-105px, 115px) rotate(-35deg); opacity: 0.9; }
+    .bird-svg-canvas.exploded .shard-6 { transform: translate(-20px, 135px) rotate(30deg); opacity: 0.9; }
+    .bird-svg-canvas.exploded .shard-7 { transform: translate(130px, 55px) rotate(35deg); opacity: 0.9; }
+    .bird-svg-canvas.exploded .shard-8 { transform: translate(95px, 120px) rotate(-20deg); opacity: 0.9; }
+
+    /* Brand Typography Container */
+    .brand-typography {
+      text-align: center;
+      margin-top: 10px;
+      overflow: hidden;
+    }
+
+    .brand-name-flynth {
+      font-family: 'Poppins', sans-serif;
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: 6px;
+      color: var(--text-color);
+      line-height: 1;
+      opacity: 0;
+      transform: translateY(24px);
+      animation: titleSlide 0.9s cubic-bezier(0.25, 1, 0.5, 1) 0.8s forwards;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      display: block;
+    }
+
+    .brand-name-tech {
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 12px;
+      color: var(--sub-color);
+      margin-top: 6px;
+      opacity: 0;
+      transform: translateY(18px);
+      animation: titleSlide 0.9s cubic-bezier(0.25, 1, 0.5, 1) 1.0s forwards;
+      display: block;
+    }
+
+    /* Tagline Badge */
+    .tagline-badge {
+      margin-top: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      backdrop-filter: blur(12px);
+      padding: 8px 24px;
+      border-radius: 30px;
+      opacity: 0;
+      transform: translateY(16px);
+      animation: titleSlide 0.9s cubic-bezier(0.25, 1, 0.5, 1) 1.2s forwards;
+    }
+
+    .tagline-dot {
+      width: 6px;
+      height: 6px;
+      background-color: var(--yellow);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--yellow);
+    }
+
+    .tagline-text {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--yellow);
+      text-transform: uppercase;
+    }
+
+    /* Hide / Show Lockup Classes */
+    .mode-icon-only .brand-typography,
+    .mode-icon-only .tagline-badge {
+      display: none !important;
+    }
+
+    .mode-flynth-only .brand-name-tech,
+    .mode-flynth-only .tagline-badge {
+      display: none !important;
+    }
+
+    .mode-tech-only .tagline-badge {
+      display: none !important;
+    }
+
+    /* Controls Toolbar */
+    .controls-bar {
+      position: absolute;
+      bottom: 24px;
+      z-index: 20;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      backdrop-filter: blur(16px);
+      padding: 10px 18px;
+      border-radius: 40px;
+      max-width: 90vw;
+    }
+
+    .control-group {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .control-divider {
+      width: 1px;
+      height: 20px;
+      background: var(--border-color);
+      margin: 0 4px;
+    }
+
+    .btn-control {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+      padding: 7px 16px;
+      border-radius: 20px;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-control:hover, .btn-control.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* Keyframe Animations */
+    @keyframes assembleShard {
+      0% {
+        opacity: 0;
+        transform: translate(var(--dx), var(--dy)) rotate(var(--rot)) scale(0.6);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(0, 0) rotate(0deg) scale(1);
+      }
+    }
+
+    @keyframes titleSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulseGlow {
+      0% { opacity: 0.6; transform: translate(-50%, -50%) scale(0.92); }
+      100% { opacity: 1; transform: translate(-50%, -50%) scale(1.08); }
+    }
+
+    /* Light Theme Modifier */
+    body.light-theme {
+      --bg-color: #FFFFFF;
+      --accent: #4A6CF7;
+      --card-bg: rgba(13, 13, 13, 0.05);
+      --border-color: rgba(13, 13, 13, 0.12);
+      --text-color: #0D0D0D;
+      --sub-color: rgba(13, 13, 13, 0.6);
+    }
+
+    body.mono-black .vector-shard {
+      fill: #0D0D0D !important;
+    }
+
+    body.mono-white .vector-shard {
+      fill: #FFFFFF !important;
+    }
+  </style>
+</head>
+<body class="mode-full-tagline">
+
+  <div class="ambient-glow"></div>
+
+  <div class="grid-backdrop">
+    <div class="grid-line"></div>
+    <div class="grid-line"></div>
+    <div class="grid-line"></div>
+    <div class="grid-line"></div>
+  </div>
+
+  <div class="stage">
+    <svg class="bird-svg-canvas" id="birdSvg" viewBox="0 0 1500 1500" onclick="toggleExplode()" title="Click to Explode / Assemble Tentacles">
+      <defs>
+        <linearGradient id="falcon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#6583FF" />
+          <stop offset="50%" stop-color="#4A6CF7" />
+          <stop offset="100%" stop-color="#3B5AE0" />
+        </linearGradient>
+      </defs>
+      
+      <!-- Shard 1: Top Wing Feather -->
+      <path class="vector-shard shard-1"
+            id="shard-1"
+            d="M 400.0 288.9 L 662.9 313.2 L 769.8 408.8 L 815.0 520.2 L 561.1 443.3 L 400.5 289.5 Z"
+            fill="url(#falcon-gradient)"
+            style="transform-origin: 607.5px 404.6px; --dx: -180px; --dy: -140px; --rot: -30deg; --delay: 0.08s;" />
+      <!-- Shard 2: Falcon Head & Beak -->
+      <path class="vector-shard shard-2"
+            id="shard-2"
+            d="M 821.8 411.6 L 854.0 413.3 L 874.9 423.5 L 912.2 455.7 L 865.3 441.6 L 863.1 442.7 L 865.9 446.7 L 878.9 456.3 L 915.6 467.0 L 928.1 473.2 L 936.0 483.4 L 944.5 501.0 L 910.0 491.3 L 895.3 491.3 L 877.2 497.0 L 839.9 512.8 L 799.7 413.3 L 821.2 412.2 Z"
+            fill="url(#falcon-gradient)"
+            style="transform-origin: 872.1px 462.2px; --dx: 190px; --dy: -130px; --rot: 30deg; --delay: 0.2s;" />
+      <!-- Shard 3: Mid Wing Feather -->
+      <path class="vector-shard shard-3"
+            id="shard-3"
+            d="M 554.3 501.5 L 678.7 505.5 L 782.8 537.7 L 556.6 633.8 L 409.0 571.1 L 553.8 502.1 Z"
+            fill="url(#falcon-gradient)"
+            style="transform-origin: 595.9px 567.6px; --dx: -220px; --dy: -20px; --rot: -20deg; --delay: 0.14s;" />
+      <!-- Shard 4: Falcon Eye Shard -->
+      <path class="vector-shard shard-4"
+            id="shard-4"
+            d="M 963.1 571.1 L 965.4 571.6 L 930.9 609.5 L 895.8 620.8 L 860.8 622.5 L 907.2 579.6 L 962.6 571.6 Z"
+            fill="url(#falcon-gradient)"
+            style="transform-origin: 913.1px 596.8px; --dx: 160px; --dy: -50px; --rot: 60deg; --delay: 0.36s;" />
+      <!-- Shard 5: Lower Wing Feather -->
+      <path class="vector-shard shard-5"
+            id="shard-5"
+            d="M 748.3 580.1 L 659.5 757.1 L 534.5 795.5 L 586.6 681.9 L 589.9 675.7 L 666.8 615.2 L 747.7 580.7 Z"
+            fill="url(#falcon-gradient)"
+            style="transform-origin: 641.4px 687.8px; --dx: -160px; --dy: 150px; --rot: -40deg; --delay: 0.26s;" />
+      <!-- Shard 6: Tail Feather 1 -->
+      <path class="vector-shard shard-6"
+            id="shard-6"
+            d="M 753.4 627.6 L 789.5 780.3 L 734.7 865.7 L 732.4 865.7 L 705.9 765.6 L 721.7 690.4 L 752.8 628.2 Z"
+            fill="url(#falcon-gradient)"
+            style="transform-origin: 747.7px 746.7px; --dx: -30px; --dy: 200px; --rot: 35deg; --delay: 0.3s;" />
+      <!-- Shard 7: Cheek Shard -->
+      <path class="vector-shard shard-7"
+            id="shard-7"
+            d="M 920.2 644.6 L 929.8 644.6 L 977.3 689.8 L 911.1 696.0 L 864.2 676.8 L 829.7 650.8 L 919.6 645.1 Z"
+            fill="url(#falcon-gradient)"
+            style="transform-origin: 903.5px 670.3px; --dx: 180px; --dy: 90px; --rot: 45deg; --delay: 0.42s;" />
+      <!-- Shard 8: Tail Feather 2 -->
+      <path class="vector-shard shard-8"
+            id="shard-8"
+            d="M 784.5 649.1 L 885.1 724.9 L 894.7 806.9 L 827.4 759.9 L 797.5 704.5 L 785.0 649.7 Z"
+            fill="url(#falcon-gradient)"
+            style="transform-origin: 839.6px 728.0px; --dx: 140px; --dy: 180px; --rot: -25deg; --delay: 0.34s;" />
+    </svg>
+
+    <div class="brand-typography" id="brandTypography">
+      <span class="brand-name-flynth">FLYNTH</span>
+      <span class="brand-name-tech">TECHNOLOGIES</span>
+    </div>
+
+    <div class="tagline-badge" id="taglineBadge">
+      <div class="tagline-dot"></div>
+      <div class="tagline-text">Built strong. Delivered fast.</div>
+    </div>
+  </div>
+
+  <div class="controls-bar">
+    <!-- Lockup Variant Selector -->
+    <div class="control-group">
+      <button class="btn-control" id="btnModeIcon" onclick="setLockupMode('icon-only')">Icon Only</button>
+      <button class="btn-control" id="btnModeFlynth" onclick="setLockupMode('flynth-only')">FLYNTH</button>
+      <button class="btn-control" id="btnModeTech" onclick="setLockupMode('tech-only')">FLYNTH TECHNOLOGIES</button>
+      <button class="btn-control active" id="btnModeTagline" onclick="setLockupMode('full-tagline')">Full + Tagline</button>
+    </div>
+
+    <div class="control-divider"></div>
+
+    <!-- Action Controls -->
+    <div class="control-group">
+      <button class="btn-control" onclick="replayShards()">Replay</button>
+      <button class="btn-control" onclick="toggleExplode()">Explode</button>
+    </div>
+
+    <div class="control-divider"></div>
+
+    <!-- Color Scheme & Canvas -->
+    <div class="control-group">
+      <button class="btn-control active" id="btnGradient" onclick="setColorScheme('gradient')">Gradient</button>
+      <button class="btn-control" id="btnBlack" onclick="setColorScheme('black')">Black</button>
+      <button class="btn-control" id="btnWhite" onclick="setColorScheme('white')">White</button>
+      <button class="btn-control active" id="btnDark" onclick="setTheme('dark')">Dark</button>
+      <button class="btn-control" id="btnLight" onclick="setTheme('light')">Light</button>
+    </div>
+  </div>
+
+  <script>
+    function setLockupMode(mode) {
+      const body = document.body;
+      body.classList.remove('mode-icon-only', 'mode-flynth-only', 'mode-tech-only', 'mode-full-tagline');
+      body.classList.add('mode-' + mode);
+
+      document.querySelectorAll('#btnModeIcon, #btnModeFlynth, #btnModeTech, #btnModeTagline').forEach(btn => btn.classList.remove('active'));
+
+      if (mode === 'icon-only') document.getElementById('btnModeIcon').classList.add('active');
+      else if (mode === 'flynth-only') document.getElementById('btnModeFlynth').classList.add('active');
+      else if (mode === 'tech-only') document.getElementById('btnModeTech').classList.add('active');
+      else document.getElementById('btnModeTagline').classList.add('active');
+
+      replayShards();
+    }
+
+    function replayShards() {
+      const svg = document.getElementById('birdSvg');
+      const clone = svg.cloneNode(true);
+      clone.classList.remove('exploded');
+      svg.parentNode.replaceChild(clone, svg);
+
+      // Re-trigger typography animations
+      const typo = document.getElementById('brandTypography');
+      const badge = document.getElementById('taglineBadge');
+      if (typo) {
+        const cloneTypo = typo.cloneNode(true);
+        typo.parentNode.replaceChild(cloneTypo, typo);
+      }
+      if (badge) {
+        const cloneBadge = badge.cloneNode(true);
+        badge.parentNode.replaceChild(cloneBadge, badge);
+      }
+    }
+
+    function toggleExplode() {
+      const svg = document.getElementById('birdSvg');
+      svg.classList.toggle('exploded');
+    }
+
+    function setColorScheme(scheme) {
+      const body = document.body;
+      const btnGradient = document.getElementById('btnGradient');
+      const btnBlack = document.getElementById('btnBlack');
+      const btnWhite = document.getElementById('btnWhite');
+
+      body.classList.remove('mono-black', 'mono-white');
+      btnGradient.classList.remove('active');
+      btnBlack.classList.remove('active');
+      btnWhite.classList.remove('active');
+
+      if (scheme === 'black') {
+        body.classList.add('mono-black');
+        btnBlack.classList.add('active');
+      } else if (scheme === 'white') {
+        body.classList.add('mono-white');
+        btnWhite.classList.add('active');
+      } else {
+        btnGradient.classList.add('active');
+      }
+      replayShards();
+    }
+
+    function setTheme(theme) {
+      const body = document.body;
+      const btnDark = document.getElementById('btnDark');
+      const btnLight = document.getElementById('btnLight');
+
+      if (theme === 'light') {
+        body.classList.add('light-theme');
+        btnLight.classList.add('active');
+        btnDark.classList.remove('active');
+
+        if (body.classList.contains('mono-white')) {
+          setColorScheme('black');
+        }
+      } else {
+        body.classList.remove('light-theme');
+        btnDark.classList.add('active');
+        btnLight.classList.remove('active');
+
+        if (body.classList.contains('mono-black')) {
+          setColorScheme('gradient');
+        }
+      }
+      replayShards();
+    }
+  </script>
+
+</body>
+</html>

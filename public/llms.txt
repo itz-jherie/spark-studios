@@ -1,27 +1,27 @@
-# Spark Studios
+# Flynth Technologies
 
-> Creative Agency specializing in high-performance web applications, branding, and digital strategy. For the complete documentation index, see [llms.txt](/llms.txt).
+> Digital engineering agency specializing in high-performance web applications, branding, and digital strategy. For the complete documentation index, see [llms.txt](/llms.txt).
 
 ## Core Pages
-- [Home](https://sparkstudios.qzz.io/) - Overview of our agency and services.
-- [About](https://sparkstudios.qzz.io/about) - Our mission, team, and approach.
-- [Services](https://sparkstudios.qzz.io/services) - Detailed breakdown of what we offer (Design, Development, Strategy).
-- [Projects](https://sparkstudios.qzz.io/projects) - Showcase of our recent work and success stories.
-- [Blog](https://sparkstudios.qzz.io/blog) - Insights on design, performance, and startup growth.
-- [Contact](https://sparkstudios.qzz.io/contact) - Get in touch for your next project.
+- [Home](https://flynth.com.ng/) - Overview of our agency and services.
+- [About](https://flynth.com.ng/about) - Our mission, team, and approach.
+- [Services](https://flynth.com.ng/services) - Detailed breakdown of what we offer (Design, Development, Strategy).
+- [Projects](https://flynth.com.ng/projects) - Showcase of our recent work and success stories.
+- [Blog](https://flynth.com.ng/blog) - Insights on design, performance, and startup growth.
+- [Contact](https://flynth.com.ng/contact) - Get in touch for your next project.
 
 ## Blog Posts
-- [5 Signs Your Brand Needs a Visual Refresh](https://sparkstudios.qzz.io/blog/5-signs-your-brand-needs-a-visual-refresh)
-- [Why We Chose Next.js for High-Performance Applications](https://sparkstudios.qzz.io/blog/why-we-chose-nextjs-for-high-performance-apps)
-- [Mastering the Pitch Deck: What Investors Actually Want](https://sparkstudios.qzz.io/blog/mastering-the-pitch-deck)
-- [The Death of the 'Minimalist' Startup Homepage](https://sparkstudios.qzz.io/blog/the-death-of-minimalist-startup-sites)
-- [Framer vs Webflow: Why The Scale Tipped](https://sparkstudios.qzz.io/blog/framer-vs-webflow-why-the-scale-tipped)
-- [The Psychology of High-Converting Landing Pages](https://sparkstudios.qzz.io/blog/the-psychology-of-high-converting-landing-pages)
-- [Unlocking E-commerce Growth with Custom WooCommerce](https://sparkstudios.qzz.io/blog/unlocking-ecommerce-growth-with-woocommerce)
-- [Your Logo is Not Your Brand](https://sparkstudios.qzz.io/blog/logo-design-is-not-branding)
-- [Building Digital Products for the African Market](https://sparkstudios.qzz.io/blog/building-digital-products-for-the-african-market)
+- [5 Signs Your Brand Needs a Visual Refresh](https://flynth.com.ng/blog/5-signs-your-brand-needs-a-visual-refresh)
+- [Why We Chose Next.js for High-Performance Applications](https://flynth.com.ng/blog/why-we-chose-nextjs-for-high-performance-apps)
+- [Mastering the Pitch Deck: What Investors Actually Want](https://flynth.com.ng/blog/mastering-the-pitch-deck)
+- [The Death of the 'Minimalist' Startup Homepage](https://flynth.com.ng/blog/the-death-of-minimalist-startup-sites)
+- [Framer vs Webflow: Why The Scale Tipped](https://flynth.com.ng/blog/framer-vs-webflow-why-the-scale-tipped)
+- [The Psychology of High-Converting Landing Pages](https://flynth.com.ng/blog/the-psychology-of-high-converting-landing-pages)
+- [Unlocking E-commerce Growth with Custom WooCommerce](https://flynth.com.ng/blog/unlocking-ecommerce-growth-with-woocommerce)
+- [Your Logo is Not Your Brand](https://flynth.com.ng/blog/logo-design-is-not-branding)
+- [Building Digital Products for the African Market](https://flynth.com.ng/blog/building-digital-products-for-the-african-market)
 
 ## Resources
-- [Full Documentation Corpus](https://sparkstudios.qzz.io/llms-full.txt) - A single file containing all site content for long-context agents.
-- [Agent Skill Definition](https://sparkstudios.qzz.io/skill.md) - Operating guidance for AI agents interacting with Spark Studios.
-- [MCP Server](https://sparkstudios.qzz.io/api/mcp) - Model Context Protocol endpoint for first-class tool access.
+- [Full Documentation Corpus](https://flynth.com.ng/llms-full.txt) - A single file containing all site content for long-context agents.
+- [Agent Skill Definition](https://flynth.com.ng/skill.md) - Operating guidance for AI agents interacting with Flynth Technologies.
+- [MCP Server](https://flynth.com.ng/api/mcp) - Model Context Protocol endpoint for first-class tool access.

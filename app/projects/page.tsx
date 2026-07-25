@@ -5,10 +5,13 @@ import Link from "next/link";
 export const metadata = {
     title: "Our Work",
     description: "Explore our selection of premium projects across branding, web design, development, and presentation design.",
+    alternates: {
+        canonical: "/projects",
+    },
     openGraph: {
-        title: "Our Work | Spark Studios",
+        title: "Our Work | Flynth Technologies",
         description: "Explore our selection of premium projects across branding, web design, development, and presentation design.",
-        url: "https://sparkstudios.qzz.io/projects",
+        url: "https://flynth.com.ng/projects",
     },
 };
 

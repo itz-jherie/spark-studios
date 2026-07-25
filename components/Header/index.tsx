@@ -75,13 +75,10 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="block transition-all">
-              <Image
-                src="/images/logo/logospark1.png"
-                alt="Spark Studios"
-                width={250}
-                height={80}
-                className="h-10 md:h-12 w-auto object-contain"
-                priority
+              <img
+                src="/images/logo/flynth-horizontal-everyday-gradient-light.svg"
+                alt="Flynth Technologies"
+                className="h-8 md:h-10 w-auto object-contain"
               />
             </Link>
           </div>

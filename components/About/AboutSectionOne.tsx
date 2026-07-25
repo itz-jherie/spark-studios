@@ -28,7 +28,7 @@ const AboutSectionOne = () => {
             </h2>
 
             <p className="text-[15px] leading-[1.8] text-ink-3 mb-10 max-w-[480px]">
-              At Spark Studios, we transform your ideas into stunning realities.
+              At Flynth Technologies, we transform your ideas into stunning realities.
               Our expert team collaborates closely with you to bring your
               brand&apos;s vision to life, delivering innovative designs and
               impactful digital strategies.

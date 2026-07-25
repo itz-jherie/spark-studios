@@ -1,19 +1,18 @@
-# Spark Studios - Landing page for creative Agency
+# Flynth Technologies — Built strong. Delivered fast.
 
-Welcome to the Spark Studios repository!
+Welcome to the Flynth Technologies repository!
 
-Spark Studios is a creative agency dedicated to delivering premium quality services that elevate brands and captivate audiences. This repository contains the source code and assets for our website and projects.
+Flynth Technologies engineers powerful digital systems, high-performance websites, and resilient platforms. This repository contains the source code, design system, and assets for our official website and application suite.
 
 ## Key Features
 
-- **Custom Branding:** Unique and memorable brand identities.
-- **Full-Service Marketing:** Comprehensive strategies for maximum reach.
-- **User-Centric Websites:** Engaging, responsive, and user-friendly websites.
-- **Cutting-Edge Video Production:** High-quality video content creation.
-- **Client-Centric Approach:** Personalized and exceptional service.
+- **Digital Systems & Engineering:** Resilient, scalable software architectures built for high performance.
+- **Custom Web Applications:** Modern Next.js and Framer implementations optimized for speed and conversion.
+- **Brand Identity Systems:** Cohesive design systems built strong and delivered fast.
+- **Client-Centric Approach:** Transparent, direct, and solution-oriented partnership.
 
 ## Getting Started
-**Clone the repository**
-**cd spark-studios**
-**npm install**
-**npm run dev**
+```bash
+npm install
+npm run dev
+```

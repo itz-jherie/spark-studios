@@ -1,6 +1,6 @@
-# Spark Studios - Full Documentation Corpus
+# Flynth Technologies - Full Documentation Corpus
 
-This file contains the complete content of Spark Studios' documentation and blog for ingestion by long-context AI agents.
+This file contains the complete content of Flynth Technologies' documentation and blog for ingestion by long-context AI agents.
 
 ---
 
@@ -30,7 +30,7 @@ Your brand is the combination of all expectations, memories, stories, and relati
 **Date:** February 22, 2026
 
 ### The Need for Speed
-At Spark Studios, our primary metric for web development is an uncompromising obsession with speed and user experience. After testing countless frameworks, we confidently standardized our tech stack on Next.js.
+At Flynth Technologies, our primary metric for web development is an uncompromising obsession with speed and user experience. After testing countless frameworks, we confidently standardized our tech stack on Next.js.
 
 - **Server-Side Rendering (SSR) by Default**: Unlike traditional React applications, Next.js renders the HTML on the server. The user gets a fully formed, lightning-fast page instantly.
 - **SEO is Not Optional**: Because Next.js serves absolute HTML on the first request, our clients' pages start ranking faster and scoring higher on Google Lighthouse.

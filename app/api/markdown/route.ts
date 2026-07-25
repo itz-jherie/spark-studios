@@ -6,19 +6,19 @@ export async function GET(request: NextRequest) {
   const path = searchParams.get('path') || '/';
 
   let content = '';
-  let title = 'Spark Studios';
+  let title = 'Flynth Technologies';
 
   // Home
   if (path === '/' || path === '') {
-    title = 'Spark Studios | Design That Makes Brands Impossible to Ignore';
+    title = 'Flynth Technologies | Built strong. Delivered fast.';
     content = `
-# Spark Studios
+# Flynth Technologies
 
-Creative Agency specializing in stunning visuals, high-performance web development, and memorable digital experiences.
+Elite digital engineering agency specializing in high-performance web applications, secure platforms, custom digital experiences, and scalable systems.
 
 ## Our Services
 - **Design**: Branding, UI/UX, Pitch Decks.
-- **Development**: Next.js, Framer, WordPress, WooCommerce.
+- **Development**: Next.js, Framer, WordPress, Web & Mobile Apps.
 - **Strategy**: Digital transformation and market entry.
 
 ## Latest Insights
@@ -27,8 +27,8 @@ Check our [blog](/blog) for the latest on design and tech.
   } 
   // Blog Index
   else if (path === '/blog') {
-    title = 'Spark Studios Blog';
-    content = '# Spark Studios Blog\n\n' + blogPosts.map(post => `- [${post.title}](/blog/${post.slug}): ${post.excerpt}`).join('\n');
+    title = 'Flynth Technologies Blog';
+    content = '# Flynth Technologies Blog\n\n' + blogPosts.map(post => `- [${post.title}](/blog/${post.slug}): ${post.excerpt}`).join('\n');
   }
   // Blog Post
   else if (path.startsWith('/blog/')) {
@@ -44,11 +44,11 @@ Check our [blog](/blog) for the latest on design and tech.
   }
   // About
   else if (path === '/about') {
-    title = 'About Spark Studios';
+    title = 'About Flynth Technologies';
     content = `
-# About Spark Studios
+# About Flynth Technologies
 
-Spark Studios is an elite creative agency based in Toronto and Abuja. We build the interfaces that allow growth to happen.
+Flynth Technologies is an elite digital engineering agency based in Abuja, serving clients worldwide. We build the interfaces that allow growth to happen.
 
 ## Our Mission
 To bridge the gap between world-class design standards and local market understanding.
@@ -56,12 +56,12 @@ To bridge the gap between world-class design standards and local market understa
 ## Why Work With Us?
 - **Speed**: We are obsessed with performance.
 - **Aesthetics**: We believe design is how it works, not just how it looks.
-- **Global Reach**: With offices in North America and Africa, we bring a unique perspective to every project.
+- **Global Reach**: Based in Nigeria, we bring a unique perspective to every project globally.
     `;
   }
   // Fallback for other pages
   else {
-    content = `# ${path}\n\nContent for this page is available at https://sparkstudios.qzz.io${path}`;
+    content = `# ${path}\n\nContent for this page is available at https://flynth.com.ng${path}`;
   }
 
   return new NextResponse(content.trim(), {

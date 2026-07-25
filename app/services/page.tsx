@@ -4,28 +4,21 @@ import CTA from "@/components/CTA";
 export const metadata = {
     title: "Services",
     description: "Explore our premium design and development services including Framer, Next.js, Web Design, Graphics Design, and Slides Design.",
+    alternates: {
+        canonical: "/services",
+    },
     openGraph: {
-        title: "Services | Spark Studios",
+        title: "Services | Flynth Technologies",
         description: "Explore our premium design and development services.",
-        url: "https://sparkstudios.qzz.io/services",
+        url: "https://flynth.com.ng/services",
     },
 };
 
 const servicesList = [
     {
-        title: "Framer Development",
-        description: "Lightning-fast, beautifully animated websites built visually without compromising on code quality. Perfect for marketing sites, portfolios, and landing pages.",
-        features: ["Custom Animations", "CMS Integration", "Custom Code", "Overrides"],
-        icon: (
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-            </svg>
-        ),
-    },
-    {
-        title: "Web Development",
-        description: "Robust, scalable web applications built with modern frameworks like Next.js and React. We deliver clean, maintainable code for complex functional requirements.",
-        features: ["Full-Stack Next.js", "API Integrations", "Database Architecture", "Performance Tuning"],
+        title: "Web & Mobile App Development",
+        description: "Robust, scalable web and mobile applications built with modern frameworks like Next.js, React, React Native, and Flutter. We deliver clean, maintainable code for complex functional requirements.",
+        features: ["Full-Stack Next.js", "Mobile Applications", "API Integrations", "Database Architecture"],
         icon: (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="16 18 22 12 16 6" />
@@ -45,6 +38,16 @@ const servicesList = [
         ),
     },
     {
+        title: "Framer Development",
+        description: "Lightning-fast, beautifully animated websites built visually without compromising on code quality. Perfect for marketing sites, portfolios, and landing pages.",
+        features: ["Custom Animations", "CMS Integration", "Custom Code", "Overrides"],
+        icon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+        ),
+    },
+    {
         title: "Web Design",
         description: "User-centric interface design that not only looks stunning but drives conversions. We engineer experiences that your users will intuitively understand and love.",
         features: ["UI/UX Design", "Wireframing", "Prototyping", "Design Systems"],
@@ -57,18 +60,6 @@ const servicesList = [
         ),
     },
     {
-        title: "Graphics Design & Branding",
-        description: "Visual identities that capture the essence of your business. We craft memorable logos, color palettes, and brand guidelines that make you impossible to ignore.",
-        features: ["Logo Design", "Brand Identity", "Marketing Assets", "Social Media Kits"],
-        icon: (
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-                <path d="M2 12h20" />
-            </svg>
-        ),
-    },
-    {
         title: "Slides & Pitch Decks",
         description: "High-stakes presentation design for founders and speakers. We distill complex information into visually compelling narratives that secure funding and win clients.",
         features: ["Pitch Decks", "Sales Presentations", "Keynote/PowerPoint", "Data Visualization"],
@@ -77,6 +68,18 @@ const servicesList = [
                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
                 <line x1="8" y1="21" x2="16" y2="21" />
                 <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+        ),
+    },
+    {
+        title: "Graphics Design & Branding",
+        description: "Visual identities that capture the essence of your business. We craft memorable logos, color palettes, and brand guidelines that make you impossible to ignore.",
+        features: ["Logo Design", "Brand Identity", "Marketing Assets", "Social Media Kits"],
+        icon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                <path d="M2 12h20" />
             </svg>
         ),
     },

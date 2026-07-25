@@ -39,8 +39,7 @@ const CTA = () => {
                     <div className="lg:col-span-4 lg:col-start-9">
                         <div className="w-12 h-1 bg-primary mb-6" />
                         <p className="text-[15px] leading-[1.8] text-ink-4 mb-8">
-                            Whether you need a brand identity, a new website, or presentation
-                            materials — Spark Studios delivers with clarity, creativity, and
+                            materials — Flynth Technologies delivers with clarity, creativity, and
                             speed.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -57,7 +56,7 @@ const CTA = () => {
                                 Start Project
                             </Link>
                             <Link
-                                href="https://calendly.com/sparkstudioscreatives/30min"
+                                href="https://calendly.com/flynthtech/30min"
                                 target="_blank"
                                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/20 text-white font-display text-[13px] font-bold uppercase tracking-widest transition-all duration-300 hover:bg-white/10"
                             >

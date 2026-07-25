@@ -5,11 +5,11 @@ import React from "react";
 const EmailButton = () => {
     return (
         <a
-            href="mailto:hello@sparkstudios.qzz.io?subject=New%20Project%20Enquiry%20%E2%80%94%20Spark%20Studios"
+            href="mailto:flynthtechnologies@gmail.com?subject=New%20Project%20Enquiry%20%E2%80%94%20Flynth%20Technologies"
             onClick={(e) => {
                 const btn = e.currentTarget;
                 if (navigator.clipboard && navigator.clipboard.writeText) {
-                    navigator.clipboard.writeText("hello@sparkstudios.qzz.io").then(() => {
+                    navigator.clipboard.writeText("flynthtechnologies@gmail.com").then(() => {
                         if (!btn) return;
                         const originalText = btn.innerHTML;
                         btn.innerHTML = `

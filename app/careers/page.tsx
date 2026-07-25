@@ -89,13 +89,13 @@ const CareersPage = () => {
                                     hear from you.
                                 </p>
                                 <a
-                                    href="mailto:hello@sparkstudios.qzz.io?subject=Speculative%20Application%20%E2%80%94%20Spark%20Studios"
+                                    href="mailto:flynthtechnologies@gmail.com?subject=Speculative%20Application%20%E2%80%94%20Flynth%20Technologies"
                                     onClick={(e) => {
                                         const btn = e.currentTarget;
                                         // Do NOT prevent default — let mobile browsers handle mailto natively.
                                         // Attempt to copy for PC fallback:
                                         if (navigator.clipboard && navigator.clipboard.writeText) {
-                                            navigator.clipboard.writeText("hello@sparkstudios.qzz.io").then(() => {
+                                            navigator.clipboard.writeText("flynthtechnologies@gmail.com").then(() => {
                                                 if (!btn) return;
                                                 const originalText = btn.innerHTML;
                                                 btn.innerHTML = `
@@ -131,7 +131,7 @@ const CareersPage = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
                         <div className="lg:col-span-4">
                             <span className="text-[12px] font-bold uppercase tracking-widest text-ink-4 mb-4 block">
-                                Life at Spark
+                                Life at Flynth
                             </span>
                             <h2
                                 className="font-display font-black text-ink uppercase tracking-tighter"
@@ -228,13 +228,13 @@ const CareersPage = () => {
                         </h2>
                     </div>
                     <a
-                        href="mailto:hello@sparkstudios.qzz.io?subject=Keep%20me%20posted%20%E2%80%94%20Spark%20Studios%20Careers"
+                        href="mailto:flynthtechnologies@gmail.com?subject=Keep%20me%20posted%20%E2%80%94%20Flynth%20Technologies%20Careers"
                         onClick={(e) => {
                             const btn = e.currentTarget;
                             // Do NOT prevent default — let mobile browsers handle mailto natively.
                             // Attempt to copy for PC fallback:
                             if (navigator.clipboard && navigator.clipboard.writeText) {
-                                navigator.clipboard.writeText("hello@sparkstudios.qzz.io").then(() => {
+                                navigator.clipboard.writeText("flynthtechnologies@gmail.com").then(() => {
                                     if (!btn) return;
                                     const originalText = btn.innerHTML;
                                     btn.innerHTML = `
