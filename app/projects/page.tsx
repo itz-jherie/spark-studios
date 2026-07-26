@@ -5,6 +5,10 @@ import Link from "next/link";
 export const metadata = {
     title: "Our Work",
     description: "Explore our selection of premium projects across branding, web design, development, and presentation design.",
+    keywords: [
+        "Flynth portfolio", "web design case studies", "custom web development projects", "branding showcase",
+        "Awwwards style websites", "architecture website design", "fintech platform portfolio", "e-commerce web designs"
+    ],
     alternates: {
         canonical: "/projects",
     },

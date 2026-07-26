@@ -5,6 +5,10 @@ import Link from "next/link";
 export const metadata = {
   title: "Contact",
   description: "Let's talk. Tell us about your project. We respond within 24 hours to help bring your brand's digital presence to life.",
+  keywords: [
+    "contact Flynth Technologies", "hire web developers Abuja", "hire web design agency Toronto",
+    "web development quote", "contact creative studio", "book design consultation"
+  ],
   alternates: {
     canonical: "/contact",
   },

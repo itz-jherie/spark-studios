@@ -5,6 +5,10 @@ import Link from "next/link";
 export const metadata = {
   title: "About Us",
   description: "A creative studio built on the belief that extraordinary design is the most powerful competitive advantage a brand can have.",
+  keywords: [
+    "about Flynth Technologies", "digital engineering agency history", "creative studio Abuja", "creative agency Toronto",
+    "web development team", "digital product designers", "brand strategy agency", "elite web engineers"
+  ],
   alternates: {
     canonical: "/about",
   },

@@ -25,6 +25,7 @@ export async function generateMetadata(
   return {
     title: `${post.title} | Flynth Technologies`,
     description: post.excerpt,
+    keywords: [post.category, post.title, "Flynth Technologies", "digital engineering", "web design insights"],
     alternates: {
       canonical: url,
     },

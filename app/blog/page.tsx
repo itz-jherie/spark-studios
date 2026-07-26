@@ -7,6 +7,10 @@ import { blogPosts } from "./blogData";
 export const metadata: Metadata = {
   title: "Journal & Insights | Flynth Technologies",
   description: "Deep dives into design psychology, web development strategies, branding, and how to build digital products that refuse to be ignored. Written by Flynth Technologies.",
+  keywords: [
+    "Flynth blog", "web development insights", "design psychology", "brand strategy guide",
+    "Next.js tutorial", "Framer vs Webflow", "pitch deck tips", "e-commerce optimization"
+  ],
   alternates: {
     canonical: "https://flynth.com.ng/blog",
   },

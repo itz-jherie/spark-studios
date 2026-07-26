@@ -4,6 +4,11 @@ import CTA from "@/components/CTA";
 export const metadata = {
     title: "Services",
     description: "Explore our premium design and development services including Framer, Next.js, Web Design, Graphics Design, and Slides Design.",
+    keywords: [
+        "web application development", "mobile app development", "Framer development agency", "WordPress agency",
+        "custom web design services", "pitch deck design", "graphics design agency", "React Native development",
+        "Flutter app developers", "Next.js web development", "WooCommerce ecommerce development"
+    ],
     alternates: {
         canonical: "/services",
     },

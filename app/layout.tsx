@@ -14,18 +14,25 @@ export const metadata = {
   description:
     "Flynth Technologies is an elite digital engineering agency specializing in high-performance web applications, secure platforms, custom digital experiences, and scalable systems. Built strong. Delivered fast.",
   keywords: [
-    // Core Services
-    "digital agency", "web design", "web development", "WordPress development", "WordPress agency", "Framer design", "brand strategy", "digital experiences",
-    "Flynth", "Flynth Technologies", "UI/UX design", "product design agency", "SaaS web design", "startup web design", "B2B web design",
-    "branding agency", "logo design", "identity design", "pitch deck design", "presentation design",
-    // Location Based keywords
-    "Toronto web design", "Toronto creative agency", "Toronto branding agency", "Toronto UI/UX agency",
-    "Abuja web design", "Abuja creative agency", "Abuja branding agency", "Abuja UI/UX agency", "Nigeria web design",
-    "Canadian design agency", "global creative studio", "remote design agency",
-    // Tech/Niche Keywords
-    "Framer expert", "Framer developer", "WordPress WooCommerce developer", "Custom WordPress Themes", "Next.js web development", "React development agency",
-    "high performance websites", "animated websites", "Awwwards winning design", "premium web design",
-    "luxury brand identity", "modern web design"
+    // Core Services & Agency Identity
+    "digital engineering agency", "web development company", "web design agency", "digital agency", "custom web applications", "full stack web development", "UI/UX design agency", "product design agency", "brand strategy", "digital experiences",
+    "Flynth", "Flynth Technologies", "flynthtech", "SaaS web design", "startup web design", "B2B web design", "enterprise software agency",
+    "branding agency", "logo design agency", "corporate identity design", "pitch deck design", "presentation design", "motion design agency",
+    
+    // Tech Stack & Frameworks
+    "Next.js development company", "React development agency", "TypeScript software development", "Framer expert", "Framer developer", "Framer design agency",
+    "WordPress development agency", "WordPress WooCommerce developer", "Custom WordPress Themes", "headless CMS development", "Node.js developers",
+    "high performance websites", "animated website design", "Awwwards winning design", "premium web design", "SEO optimized web design",
+    "React Native mobile apps", "Flutter mobile development", "custom SaaS development", "website speed optimization",
+
+    // Market Intent & Buyer Terms
+    "hire web design agency", "best web development company for startups", "custom web application development", "high converting landing page design",
+    "luxury brand identity design", "modern web application design", "scalable web applications", "secure web platform development",
+
+    // Local & Geographic SEO
+    "Abuja web design", "Abuja web development company", "Abuja creative agency", "Abuja branding agency", "Abuja UI/UX agency", "Nigeria web design agency", "Nigeria tech agency",
+    "Toronto web design", "Toronto creative agency", "Toronto branding agency", "Toronto UI/UX agency", "Canadian design agency",
+    "global creative studio", "remote web design agency", "international software studio"
   ],
   authors: [{ name: "Flynth Technologies", url: "https://flynth.com.ng" }],
   creator: "Flynth Technologies",
@@ -118,7 +125,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": ["ProfessionalService", "LocalBusiness"],
+              "@type": ["ProfessionalService", "LocalBusiness", "Organization"],
               "name": "Flynth Technologies",
               "url": "https://flynth.com.ng",
               "logo": "https://flynth.com.ng/images/logo/logo.svg",
@@ -145,7 +152,18 @@ export default function RootLayout({
               },
               "sameAs": [
                 "https://x.com/flynthtech",
-                "https://linkedin.com/company/flynth-technologies"
+                "https://www.linkedin.com/company/flynth-technologies/",
+                "https://www.tiktok.com/@flynthtech"
+              ],
+              "knowsAbout": [
+                "Web Engineering",
+                "Web Design",
+                "Software Development",
+                "WordPress Development",
+                "Framer Development",
+                "UI/UX Design",
+                "Brand Strategy",
+                "Pitch Deck Design"
               ]
             })
           }}

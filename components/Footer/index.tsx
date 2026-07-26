@@ -25,7 +25,7 @@ const Footer = () => {
             <div className="flex items-center gap-3">
               {[
                 { label: "X", href: "https://x.com/flynthtech" },
-                { label: "Li", href: "https://www.linkedin.com/company/flynth-technologies" },
+                { label: "Li", href: "https://www.linkedin.com/company/flynth-technologies/" },
                 { label: "Tt", href: "https://www.tiktok.com/@flynthtech" },
               ].map((social) => (
                 <a
@@ -129,7 +129,7 @@ const Footer = () => {
           <div className="flex items-center gap-6">
             {[
               { label: "X (Twitter)", href: "https://x.com/flynthtech" },
-              { label: "LinkedIn", href: "https://www.linkedin.com/company/flynth-technologies" },
+              { label: "LinkedIn", href: "https://www.linkedin.com/company/flynth-technologies/" },
               { label: "TikTok", href: "https://www.tiktok.com/@flynthtech" },
             ].map((s) => (
               <a
